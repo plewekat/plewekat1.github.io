@@ -8,4 +8,6 @@ try {
   document.getElementById(
   "currentdate"
 ).textContent = new Date().toLocaleDateString("en-US", options);
+  } catch (e) {
+    alert("error with code");
   }
