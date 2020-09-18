@@ -1,0 +1,31 @@
+body{
+  max-width: 700px;
+}
+
+h1 {
+  padding: 30px;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+}
+
+h2 {
+  
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  background-color: teal;
+  color: black;
+  border-radius: 10px;
+}
+
+h3{
+  font-size: .9em;
+}
+
+h4{
+  font-size: .8em;
+   color: white;
+}
