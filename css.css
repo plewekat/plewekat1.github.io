@@ -3,11 +3,13 @@ body{
   margin: auto;
   background-color: #dee4dc
 }
-
+a { 
+  color: teal; 
+}
 h1 {
   padding: 30px;
   background-color: rgb(11, 77, 88);
-  color: #cadec5;
+  color: white;
   border-radius: 10px;
 }
 
