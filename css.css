@@ -1,14 +1,14 @@
 body{
   max-width: 700px;
   margin: auto;
-  background-color: #dee4dc
+  background-color: rgb(224, 224, 224);
 }
 a { 
   color: teal; 
 }
 h1 {
   padding: 30px;
-  background-color: rgb(11, 77, 88);
+  background-color: rgb(6, 50, 58);
   color: white;
   border-radius: 10px;
 }
@@ -20,7 +20,7 @@ h2 {
 footer {
   text-align: center;
   padding: 5px 0px 5px 0px;
-  background-color: rgb(11, 77, 88);
+  background-color: rgb(6, 50, 58);
   color: rgb(146, 158, 149);
   border-radius: 10px;
 }
