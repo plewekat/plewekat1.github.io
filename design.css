@@ -12,6 +12,7 @@ body{
   background-color: rgb(224, 224, 224);
 }
 a { 
+  padding: 0px 0px 0px 10px;
   color: teal; 
 }
 
@@ -40,17 +41,19 @@ footer {
 }
 
 h3{
+  padding: 10px;
   font-size: .9em;
 }
 
 h4{
+  padding: 0px 0px 0px 10px;
   font-size: 1em;
   color: black;
 }
 
 h5{
   font-size: .8em;
-   color: #cadec5;
+  color: #cadec5;
 }
 
 img { 
