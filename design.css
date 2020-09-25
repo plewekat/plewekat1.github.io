@@ -27,8 +27,9 @@ h1 {
   color: tan;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   padding: 0px 0px 0px 10px;
+  color: rgb(94, 70, 40);
 }
 
 footer {
