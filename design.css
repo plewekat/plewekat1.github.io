@@ -1,0 +1,68 @@
+.grid-container {
+  display: grid;
+   grid-template-columns: auto;
+}
+
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgb(224, 224, 224);
+}
+a { 
+  color: teal; 
+}
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: rgb(6, 50, 58);
+  color: rgb(146, 158, 149);
+}
+
+h1 {
+  color: tan;
+}
+h2 {
+  font-size: 1rem;
+  padding: 0px 0px 0px 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  background-color: rgb(6, 50, 58);
+  color: rgb(146, 158, 149);
+}
+
+h3{
+  font-size: .9em;
+}
+
+h4{
+  font-size: .8em;
+   color: #cadec5;
+}
+
+img { 
+  margin: 10px;
+}
+
+/* tablet view*/
+@media only screen and (min-width: 37.5em) {
+.grid-container {
+  grid-template-columns: auto auto;
+}
+
+}
+
+/* Desktop view*/
+@media only screen and (min-width: 60em) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+}
