@@ -3,6 +3,10 @@
   grid-template-columns: auto;
 }
 
+.image {
+  max-width: 220px;
+}
+
 .image img {
   display: block;
   margin-left: auto;
@@ -63,7 +67,7 @@ h5{
 
 img { 
   margin: 10px;
-  max-width: 200px;
+ max-width: 220px;  
   }
 
 
