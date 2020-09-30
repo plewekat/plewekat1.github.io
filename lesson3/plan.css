@@ -7,6 +7,7 @@ body{
   margin: auto;
   background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudBlue.jpg")
 }
+
 a:link, a:visited {
   border: 2px white;
   padding: 10px 20px;
@@ -52,7 +53,9 @@ h5 {
 }
 
 img { 
-  margin: 10px;
+  max-width:100%;
+  height:auto;
+  margin: 10px
 }
 .flex-container {
   background-color: #e0e2da;
@@ -78,6 +81,7 @@ img {
 }
 
 .flex-container {
+  padding: -10px;
   flex-direction: row;
   justify-content: space-around;
 }
