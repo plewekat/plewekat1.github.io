@@ -1,0 +1,85 @@
+#main {
+  background-color: white;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 700px;
+  margin: auto;
+  background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudBlue.jpg")
+}
+a:link, a:visited {
+  border: 2px white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: #2F0083; 
+}
+h1, header {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 30px;
+  background-color: rgb(47, 69, 109);
+  color: #e0e2da;
+}
+
+h2 {
+  font-size: 1rem;
+  padding: 0px 0px 0px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  background-color: rgb(47, 69, 109);
+  color: rgb(146, 158, 149);
+}
+
+footer a {
+  color: #cccccc;
+}
+
+h3{
+  font-size: .9em;
+}
+
+h4{
+  font-size: .8em;
+   color: #e3eee0;
+}
+h5 {
+  padding: 20px;
+}
+
+img { 
+  margin: 10px;
+}
+.flex-container {
+  background-color: #e0e2da;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 32.5em) {
+  h1 {
+    font-size: 2.5rem;
+
+  }
+  
+h2 {
+  font-size: 1.5rem;
+}
+
+img {
+  float: right;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+}
