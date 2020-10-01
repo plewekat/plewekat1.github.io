@@ -1,89 +1,38 @@
-#main {
-  background-color: white;
-}
-body{
-  font-family: 'Roboto', sans-serif;
-  max-width: 700px;
-  margin: auto;
-  background-color: rgb(214, 211, 230);
-}
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Index page for wireframe, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 
-a:link, a:visited {
-  border: 2px white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  color: #2F0083; 
-}
-h1, header {
-  text-align: center;
-  font-size: 1.5em;
-  padding: 30px;
-  background-color: rgb(47, 69, 109);
-  color: #e0e2da;
-}
-
-h2 {
-  font-size: 1rem;
-  padding: 0px 0px 0px 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 5px 0px 5px 0px;
-  background-color: rgb(47, 69, 109);
-  color: rgb(146, 158, 149);
-}
-
-footer a {
-  color: #cccccc;
-}
-
-h3{
-  font-size: .9em;
-}
-
-h4{
-  font-size: .8em;
-   color: #e3eee0;
-}
-h5 {
-  padding: 20px;
-}
-
-img { 
-  max-width:100%;
-  height:auto;
-  margin: 10px
-}
-.flex-container {
-  background-color: #e0e2da;
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 32.5em) {
-  h1 {
-    font-size: 2.5rem;
-
-  }
+  <title>Katharine Weber site plan</title>
+  <link rel="stylesheet" href="https://plewekat.github.io/css.normalize">
+  <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+<div id="main">
+<header>
   
-h2 {
-  font-size: 1.5rem;
-}
-
-img {
-  float: right;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.flex-container {
-  padding: -10px;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-}
+ <img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon">
+ <h1>Idaho Weather Now</h1>
+  <h4>www.idahoweathernow.com</h4>
+</header><hr>
+<div class="flex-container">
+  <h3><a href="./index.html">PURPOSE</a></h3>
+  <h3><a href="./target-audience.html">TARGET AUDIENCE</a></h3>
+  <h3><a href="./typography.html">TYPOGRAPHY</a></h3>
+  <h3><a href="./color-scheme.html">COLOR SCHEME</a></h3>
+  <h3><a href="../index.html">HOME</a></h3>
+  </div>
+  <hr><br>
+   <h2>PURPOSE:</h2>
+  <h5>The purpose of Idaho Weather Now is to provide current and accurate weather information for three towns in Idaho. The website would provide a page for each location, detailing current temperature, conditions, and other useful information. A map of each area would be provided as well.</h5><br>
+<footer>
+  <h3>&copy; 2020 | Katharine Weber | <a href="https://www.byui.edu/online">BYUI Online Learning</a></h3>
+</footer>
+<script src="js.js">
+</script>
+</div>
+</body>
+</html>
