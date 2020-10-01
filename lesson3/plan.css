@@ -5,7 +5,7 @@ body{
   font-family: 'Roboto', sans-serif;
   max-width: 700px;
   margin: auto;
-  background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudBlue.jpg")
+  background-color: rgb(214, 211, 230);
 }
 
 a:link, a:visited {
