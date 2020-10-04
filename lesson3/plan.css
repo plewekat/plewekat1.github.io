@@ -50,19 +50,27 @@ footer {
 }
 
 h3{
+  padding: 0px 0px 0px 20px;
   font-family: 'Abel', sans-serif;
   font-size: .9em;
 }
 
 h4{
+  padding: 0px 0px 0px 20px;
   font-size: .8em;
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
 h5 {
+  padding: 0px 0px 0px 20px;
   font-size: 1.15em;
   padding: 20px;
+}
+
+#paragraph
+{
+  padding: 0px 0px 0px 20px;
 }
 
 img { 
