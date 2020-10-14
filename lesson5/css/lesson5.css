@@ -20,12 +20,56 @@ a:link, a:visited {
   display: inline-block;
   color: #2F0083; 
 }
+.content1 {
+  margin: 10px -20px 10px 20px;
+  position: relative;
+}
+
+.weatherSummary {
+  color: white;
+  font-family: 'abel', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	background-image: linear-gradient(orange, #FDC93D, #F9E24C, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E);
+	padding: 1rem;
+	opacity: .9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cloudman{
+  max-width: 95%;
+  margin: auto;
+}
+
+#fiveday {
+ max-width: 95%;
+ margin: 10px -20px 10px 20px;
+}
 
 hr.purple {
  border: 10px solid #2F0083;
  
 }
+hr.yellow {
+  border: 1px solid #E8C144; 
+}
 
+#article {
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+#articleImg {
+  float: right; 
+  margin: 0px 25px 25px 25px; 
+}
 header {
   display: block;
   text-align: center;
@@ -85,8 +129,8 @@ h5 {
 
 img { 
   max-width:100%;
-  height:auto;
-  margin: 10px
+  height: auto;
+  margin: 10px;
 }
 nav {
 	margin: 0 auto;
