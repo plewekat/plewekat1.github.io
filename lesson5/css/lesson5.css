@@ -18,7 +18,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  color: #2F0083; 
+  color: #2B0084; 
 }
 .content1 {
   margin: 10px -20px 10px 20px;
@@ -26,15 +26,17 @@ a:link, a:visited {
 }
 
 .weatherSummary {
+  max-height: auto;
+  max-width: 8rem;
+  font-size: 1.2em;
+  font-weight: 700;
   color: white;
   font-family: 'abel', sans-serif;
-  font-size: 1.5em;
-  font-weight: 800;
 	position: absolute;
 	top: 0px;
 	left: 25px;
 	background-image: linear-gradient(orange, #FDC93D, #F9E24C, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E);
-	padding: 1rem;
+	padding: .7rem;
 	opacity: .9;
   display: flex;
   align-items: center;
@@ -42,6 +44,10 @@ a:link, a:visited {
   border-radius: 0px 0px 25px 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+  .weatherSummary img {
+  max-width: 50%;
+  margin: 5px;
+  }
 
 #cloudman{
   max-width: 95%;
@@ -63,10 +69,11 @@ hr.yellow {
 
 #article {
   margin: 20px;
-  font-size: 1.5em;
+  font-size: 1.0em;
 }
 
 #articleImg {
+  max-width: 40%;
   float: right; 
   margin: 0px 25px 25px 25px; 
 }
@@ -97,10 +104,20 @@ h2 {
 footer {
   text-align: center;
   padding: 1px 0px 10px 0px;
-  background-color: #014F91;
+	background-image: linear-gradient(#17214E, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, orange, #2B0084, #17214E, #17214E, #17214E, #17214E, #17214E, #17214E, #17214E);
   color: rgb(146, 158, 149);
   border-radius: 0px 0px 25px 25px;
 }
+
+footer a:link, a:visited {
+  border: 2px white;
+  padding: 0px 0px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: gray; 
+}
+
 
 h3{
   font-family: 'Abel', sans-serif;
@@ -183,6 +200,45 @@ nav {
   font-family: 'abel', sans-serif;
 }
 
+.footerWrapper {
+  padding: -10px -10px -10px -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo {
+  max-width: 50%;
+  padding: 0px 0px 20px 20px;
+  font-size: .7em;
+}
+#contactTitle {
+  margin: -10px;
+}
+#infoEmail {
+  display: flex;
+  align-items: center;
+}
+
+#infoPhone {
+  display: flex;
+  align-items: center;
+}
+
+#infoLocation {
+  display: flex;
+  align-items: center;
+}
+
+#map {
+ width: 200px;
+ height: 200px;
+}
+
+.IWicon {
+  max-width: 10%;
+}
+
 @media only screen and (min-width: 32.5em) {
   
   header {
@@ -190,7 +246,7 @@ nav {
   }
   
   h1 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
   
 h2 {
@@ -199,7 +255,18 @@ h2 {
   h4{
     font-size: 1rem;
   }
-
+  
+.weatherSummary {
+  max-width: 30rem;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 1.2rem;
+}
+  .weatherSummary img {
+    max-width: 40%;
+  }
+  
+  
 img {
   margin: 10px;
   border-radius: 5px;
@@ -244,11 +311,18 @@ img {
   justify-content: center;
   align-items: center;
 }
+ 
+#article {
+  font-size: 1.3em;
+}
+  .contactInfo {
+  font-size: .8em;
+}
 }
   
 @media only screen and (min-width: 50em) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
   h3 {
     font-size: .9em;
@@ -256,4 +330,21 @@ img {
     .flex-container a {
 		font-size: .8em;
 	}
+  
+  .weatherSummary {
+  max-width: 50rem;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 1.5rem;
+}
+  .weatherSummary img {
+   max-width: 60%;
+}
+  
+  #article {
+  font-size: 1.5em;
+}
+  .contactInfo {
+  font-size: 1em;
+}
 }
