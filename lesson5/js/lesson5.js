@@ -17,9 +17,15 @@ const dateFormatOptions = {
 currentDateElement.textContent = currentDate.toLocaleDateString('en-US', dateFormatOptions);
 
 
-const headerDate = new Date.getDay()
+const headerDate = new Date();
+const headerDay = headerDate.getDay();
 
-if (headerDate == 0) {
+if (headerDay===6) {
 document.getElementById('alertMsg').classList.add('alertMessageYes');
 document.getElementById('alertMsg').classList.remove('alertMessage');
+}
+
+if (headerDay!=6) {
+document.getElementById('alertMsg').classList.add('alertMessage');
+document.getElementById('alertMsg').classList.remove('alertMessageYes');
 }
