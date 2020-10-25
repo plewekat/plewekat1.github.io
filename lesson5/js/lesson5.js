@@ -15,3 +15,11 @@ const dateFormatOptions = {
 };
 
 currentDateElement.textContent = currentDate.toLocaleDateString('en-US', dateFormatOptions);
+
+
+const headerDate = new Date.getDay()
+
+if (headerDate == 0) {
+document.getElementById('alertMsg').classList.add('alertMessageYes');
+document.getElementById('alertMsg').classList.remove('alertMessage');
+}

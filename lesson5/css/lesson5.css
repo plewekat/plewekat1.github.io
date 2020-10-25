@@ -21,8 +21,21 @@ a:link, a:visited {
   color: #2B0084; 
 }
 
+.alertMessageYes {
+  display:block;
+  color: black;
+  background: orange;
+  padding: 20px;
+  font-family: abel;
+  font-size: 2em;
+}
+
+.alertMessage {
+  display: none;
+}
+
 .content1 {
-  margin: 10px -20px 10px 20px;
+  margin: 10px 0px 10px 20px;
   position: relative;
 }
 
@@ -56,8 +69,7 @@ a:link, a:visited {
 }
 
 #fiveday {
- max-width: 95%;
- margin: 10px -20px 10px 20px;
+display: none;
 }
 
 hr.purple {
@@ -82,7 +94,7 @@ header {
   display: block;
   text-align: center;
   font-size: 1.5em;
-  padding: 10px;
+  padding: 0px 0px 10px 0px;;
   background-color: #014F91;
   color: #e0e2da;
 }
@@ -166,7 +178,11 @@ nav {
 }
 
 .flex-container .active {
-  color: #014F91;
+  color: orange;
+}
+
+.flex-container a:hover {
+  color: gray;
 }
 
 .flex-container li:first-child {
@@ -309,6 +325,16 @@ img {
   justify-content: center;
   align-items: center;
 }
+ #fiveday {
+ display: block;
+ margin: 0px 0px 0px 10px;
+ max-width: 94%;
+}
+  
+ .content1 {
+  margin: 10px -8px 10px 20px;
+  position: relative;
+}
  
 #article {
   font-size: 1.3em;
@@ -337,6 +363,14 @@ img {
 }
   .weatherSummary img {
    max-width: 60%;
+}
+  #fiveday {
+ max-width: 95%;
+}
+  
+  .content1 {
+  margin: 10px -20px 10px 20px;
+  position: relative;
 }
   
   #article {
