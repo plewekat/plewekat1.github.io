@@ -21,10 +21,6 @@ a:link, a:visited {
   color: #2B0084; 
 }
 
-a: active {
-  color: gray;  
-}
-
 .content1 {
   margin: 10px -20px 10px 20px;
   position: relative;
@@ -89,6 +85,10 @@ header {
   padding: 10px;
   background-color: #014F91;
   color: #e0e2da;
+}
+
+header a.active{
+  color: #014F91;  
 }
 
 h1 {
@@ -169,6 +169,10 @@ nav {
   font-weight: 700;
 }
 
+.flex-container .active {
+  color: white;
+}
+
 .flex-container li:first-child {
 	display: block;
 }
@@ -187,6 +191,7 @@ nav {
 .flex-container #myLinks {
   display: none;
 }
+
 
 .responsive li {
 	display: block;
@@ -236,14 +241,7 @@ nav {
   max-width: 10%;
 }
 
-.btn a:hover {
-  color: gray;
-}
 
-.btn a:active {
-  background-color: #666;
-  color: white;
-}
 
 @media only screen and (min-width: 32.5em) {
   
@@ -268,10 +266,9 @@ h2 {
   font-weight: 700;
   padding: 1.2rem;
 }
-  .weatherSummary img {
+.weatherSummary img {
     max-width: 40%;
   }
-  
   
 img {
   margin: 10px;
@@ -321,7 +318,7 @@ img {
 #article {
   font-size: 1.3em;
 }
-  .contactInfo {
+.contactInfo {
   font-size: .8em;
 }
 }
