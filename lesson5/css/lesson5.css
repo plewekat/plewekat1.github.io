@@ -87,10 +87,6 @@ header {
   color: #e0e2da;
 }
 
-header a.active{
-  color: #014F91;  
-}
-
 h1 {
   font-family: 'nanum gothic', sans-serif;
   text-align: center;
@@ -170,7 +166,7 @@ nav {
 }
 
 .flex-container .active {
-  color: white;
+  color: #014F91;
 }
 
 .flex-container li:first-child {
@@ -191,7 +187,6 @@ nav {
 .flex-container #myLinks {
   display: none;
 }
-
 
 .responsive li {
 	display: block;
