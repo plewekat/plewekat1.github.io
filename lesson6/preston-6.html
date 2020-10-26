@@ -10,7 +10,7 @@
   
   <title>Idaho Weather Now home page</title>
   <link rel="stylesheet" href="https://plewekat.github.io/css.normalize">
-  <link rel="stylesheet" href="css/lesson6.css">
+  <link rel="stylesheet" href="css/lesson5.css">
   <link rel="shortcut icon" href="https://plewekat.github.io/favicon1.ico">
 </head>
 <body>
@@ -40,17 +40,25 @@
  </nav>
   
 </header><hr class="purple">
-  <h2>PRESTON IDAHO</h2><hr>
-  <div class = "content1">
-  <img id = "cloudman" src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholderMd.jpg" alt="Cloud reader">
+ <h2>PRESTON IDAHO</h2><hr>
+ <div class = "content1">   
+  <picture class="myphoto">
+  <img src="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/large1200.jpg" alt="heroimage" sizes="60vw"
+     srcset="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/Small400.jpg 400w,
+             https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/medium800.jpg 800w,
+             https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/large1200.jpg 1200w">
+    </picture>
+  
   <div class = "weatherSummary">
   <img src ="https://plewekat.github.io/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon">
- <h3>Weather Summary<br><br>
-    sunny<br>
-    65*
-    </h3>
-    </div>
+   <div id="weatherColumns">
+    <h3>Weather Summary</h3>
+    Temperature:<span id="temp">45</span>
+    Wind Speed:<span id="speed">45</span>
+    Wind Chill:<span id="windchill"></span>
+   </div>
   </div>
+ </div>
   <hr>
   <div class ="fiveday">
   <img src ="https://plewekat.github.io/images/5dayLg.jpg" alt="Idaho Weather Now icon">
@@ -82,7 +90,7 @@
   <span id="current-date"></span>
 </footer>
 </div>
-<script src="js/lesson6.js">
+<script src="js/lesson5.js">
 </script>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
     <i class="fa fa-bars"></i>
