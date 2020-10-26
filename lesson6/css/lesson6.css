@@ -40,7 +40,7 @@ a:link, a:visited {
 
 #weatherColumns {
   display: grid;
-  grid: 'myArea myArea';
+  grid: "myArea myArea";
   font-size: .6em;
   grid-gap: 8px;
   padding: 0px 10px 10px 10px;
@@ -52,12 +52,15 @@ a:link, a:visited {
 }
 
 .content1 {
-  margin: 10px 0px 10px 20px;
+  margin: 10px 0px 20px 10px;
   position: relative;
 }
 
+#photo {
+  max-width: 94%;
+}
+
 .weatherSummary {
-  max-height: auto;
   max-width: 10rem;
   font-size: 1.2em;
   font-weight: 700;
@@ -77,6 +80,7 @@ a:link, a:visited {
 }
   
 .weatherSummary img {
+  display: none;
   max-width: 50%;
   margin: 5px;
   }
@@ -232,7 +236,6 @@ nav {
 }
 
   .footerWrapper {
-  padding: -10px -10px -10px -10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +299,8 @@ h2 {
   padding: 1.2rem;
 }
 .weatherSummary img {
-    max-width: 40%;
+   display: block;
+   max-width: 40%;
   }
   
 #weatherColumns h3 {
@@ -321,7 +325,7 @@ img {
 }
   
 .flex-container li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 auto;
 	}
   
@@ -358,7 +362,7 @@ img {
 }
   
  .content1 {
-  margin: 10px -8px 10px 20px;
+  margin: 10px -8px 10px 10px;
   position: relative;
 }
  
@@ -370,6 +374,9 @@ img {
 }
 }
   
+
+
+
 @media only screen and (min-width: 50em) {
   h1 {
     font-size: 3.7rem;
@@ -399,14 +406,12 @@ img {
   font-size: .95em;
 }
   
-  
-  
   .fiveday {
  max-width: 95%;
 }
   
   .content1 {
-  margin: 10px -20px 10px 20px;
+  margin: 10px -20px 10px 10px;
   position: relative;
 }
   
