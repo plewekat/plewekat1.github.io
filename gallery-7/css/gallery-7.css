@@ -36,10 +36,6 @@ grid-gap:
 position: relative;
 }
 
-figcaption {
-  padding: 0px 0px 0px 20px;
-}
-
 a:link, a:visited {
   border: 2px white;
   padding: 0px 0px 0px 10px;
@@ -302,6 +298,10 @@ nav {
 }
 
 
+figcaption {
+  padding: 0px 0px 0px 20px;
+}
+
 
 @media only screen and (min-width: 32.5em) {
   
@@ -457,9 +457,16 @@ grid-template-columns: auto auto;
 }
   
   .grid-container { 
-  display: grid;        
+  display: grid;
   justify-content: center;
   grid-template-columns: auto auto auto;
 }
+  figure img{
+   margin: 0px 0px 20px 0px ;
+  }
+  
+  figure:hover {
+  box-shadow: 0 0 50px #1139;
+  }
   
 }
