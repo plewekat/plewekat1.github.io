@@ -29,3 +29,42 @@ if (headerDay!=6) {
 document.getElementById('alertMsg').classList.add('alertMessage');
 document.getElementById('alertMsg').classList.remove('alertMessageYes');
 };
+
+
+const imgOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px 50px 0px"
+  };
+  
+  if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+    if(item.isIntersecting) {
+      loadImages(item.target);
+      observer.unobserve(item.target);
+    }
+    });
+  });
+  
+  imagesToLoad.forEach((img) => {
+  observer.observe(img)
+  });                     
+  } else {
+    imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+  }
+  
+  function myFunction(elmnt,clr) {
+    elmnt.style.color = clr;
+  }
+  
+  WebFont.load({
+    google: {
+      families: [
+         'Abel', 'Roboto', 'nanum gothic'
+      ]
+    }
+    
+  });
+  
