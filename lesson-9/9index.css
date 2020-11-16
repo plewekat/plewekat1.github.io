@@ -9,27 +9,28 @@ filter: blur(0.05em);
 }
 
 .cards {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-grid-gap: 10px;
-justify-content: center; 
-padding: 10px;
-}
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-content: center; 
+  padding: 10px 10px 50px 10px;
+  }
+  
+  .cards section {
+    background-color: white;
+  }
+  
+  .cards section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+  }
 
-.cards section {
-  background-color: white;
-  font-size: 0.75rem;
-  padding: 10px 0px 30px 0px;
-}
-
-.cards section h3 {
- height: 40px;
- padding: 20px;
-}
-
-.cards section img {
-  width: 80%;
-  height: auto;
+.cards section h2{
+  color: orange;
+  font-size: 1.5rem;
 }
 
 body{
@@ -158,11 +159,13 @@ h1 {
   margin: -10px;
 }
 
-h2 {
-  font-size: 1rem;
-  padding: 0px 0px 0px 20px;
-  font-family: 'Nanum Gothic', sans-serif;
-}
+  h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 10px;
+    padding: 10px;
+  }
 
 footer {
   text-align: center;
@@ -182,11 +185,18 @@ footer a:link, a:visited {
 }
 
 
-h3{
-  font-family: 'Abel', sans-serif;
-  font-size: .6em;
-  padding: 0px 0px 0px 20px;
-}
+  h3{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: .6em;
+    margin: 5px;
+  }
+
+ p {
+    text-align: center;
+    margin: 10px;
+    font-size: .7em;
+  }
 
 h4{
   padding: 0px 0px 0px 0px;
@@ -305,6 +315,10 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
+   p {
+    font-size: .8em;
+  }
+  
   header {
   display: block;
   }
@@ -406,6 +420,11 @@ img {
 
 
 @media only screen and (min-width: 50em) {
+  
+  p {
+    font-size: .9em;
+  }
+  
   h1 {
     font-size: 3.7rem;
   }

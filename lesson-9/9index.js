@@ -24,7 +24,7 @@ fetch(requestURL)
      yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
      population.textContent = "Population: " + towns[i].currentPopulation;
      rainfall.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
-     image.setAttribute('src', "images/" + towns[i].photo);
+     image.setAttribute('src', "https://plewekat.github.io/images/" + towns[i].photo);
      image.setAttribute('alt', towns[i].name)
      
      card.appendChild(h2);
