@@ -30,7 +30,8 @@ document.getElementById('alertMsg').classList.add('alertMessage');
 document.getElementById('alertMsg').classList.remove('alertMessageYes');
 };
 
-let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imagesToLoad = document.querySelectorAll("img[data-src]");
 const loadImages = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
   image.onload = () => {image.removeAttribute("data-src");
