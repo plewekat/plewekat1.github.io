@@ -10,7 +10,7 @@
   
   <title>Idaho Weather Now home page</title>
   <link rel="stylesheet" href="https://plewekat.github.io/css.normalize">
-  <link rel="stylesheet" href="css/lesson6.css">
+  <link rel="stylesheet" href="preston-10.css">
   <link rel="shortcut icon" href="https://plewekat.github.io/favicon1.ico">
 </head>
 <body>
@@ -53,9 +53,11 @@
   <img src ="https://plewekat.github.io/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon">
    <div id="weatherColumns">
     <h3>Weather Summary</h3>
-    Temperature:<span id="t">45</span>
+    Temperature:<span id="current-temp"></span>&deg; F
     Wind Speed:<span id="s">45</span>
     Wind Chill:<span id="f"></span>
+    Image:<span id="imagesrc"></span> &nbsp;
+    <img src="" alt="" id="icon"/>
    </div>
   </div>
  </div>
@@ -67,6 +69,17 @@
           https://plewekat.github.io/images/5day1000.jpg 1000w">
   <hr>
   </div>
+
+<h2>Forecast Example</h2>
+  <p> High Temperature Forecasts at noon of each day going forward.</p>
+  <p><span id="dayofweek1></span> : <span id="forecast1"></span>&deg; F</p>
+  <p><span id="dayofweek2></span> : <span id="forecast2"></span>&deg; F</p>
+  <p><span id="dayofweek3></span> : <span id="forecast3"></span>&deg; F</p>
+  <p><span id="dayofweek4></span> : <span id="forecast4"></span>&deg; F</p>
+  <p><span id="dayofweek5></span> : <span id="forecast5"></span>&deg; F</p>
+
+
+
   <div class = "articleWrapper">
   <h5>Article about Preston, Idaho</h5>
   <div id = "article">  <img id = "articleImg" src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/sodasprings.jpg" alt="Idaho Weather Now icon">Article text would go here. Ideally this would contain information about current events and activities in Preston, Idaho. The text would give the reader additional infomration about outside activities, and perhaps spotlight local events and people. An image of a local engaging in some sort of outdoor activity would be perfect. Article text would go here. Ideally this would contain information about current events and activities in Preston, Idaho. The text would give the reader additional infomration about outside activities, and perhaps spotlight local events and people. An image of a local engaging in some sort of outdoor activity would be perfect.</div>
@@ -93,6 +106,7 @@
   <span id="current-date"></span>
 </footer>
 </div>
+<script src="js/forecast.js"></script>
 <script src="js/lesson6.js">
 </script>
 <script src="js/windchill.js">
