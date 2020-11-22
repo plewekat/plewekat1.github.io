@@ -1,13 +1,56 @@
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
+
+fetch(weatherURL)
+  .then(response => response.json())
+  .then(jsObject => {
+    console.log(jsObject);
+
+    const curweather = document.getElementById('current-weather');
+    const curtemp = document.getElementById('current-temp');
+    const curwindspeed = document.getElementById('current-wind-speed');
+  
+
+    curweather.innerText = jsObject.weather[0].main;
+    curtemp.innerText = jsObject.main.temp + " ℉";
+    curwindspeed.innerText = jsObject.wind.speed + "mph";
+ 
+
+    const temperature = parseFloat(jsObject.main.temp);
+    const windspeed = parseFloat(jsObject.wind.speed);
+    let windchill = "N/A";
+    if (temperature <= 50 && windspeed >= 3) {
+      windchill = (35.74+0.6215*temperature-35.75*Math.pow(windspeed, 0.16)+0.4275*temperature*Math.pow(windspeed, 0.16)).toFixed(1);
+      windchill = windchill + " ℉"
+    }
+    document.getElementById('current-wind-chill').textContent = windchill;
+});
+
+
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
+
+
+fetch(forecastURL)
+  .then(response => response.json())
+  .then(jsObject => {
+    console.log(jsObject);
+  
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+
+    for (let day = 0; day < forecast.length; day++) {
+      const today = forecast[day];
+      const date = new Date(today.dt_txt);
+      document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
+      document.getElementById(`forecast${day+1}`).textContent = today.main.temp;
+    }
+  });
+
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.flex-container')
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
-const t = parseFloat(document.getElementById('t').textContent);
-const s = parseFloat(document.getElementById('s').textContent);
-document.getElementById('f').textContent = (35.74+0.6215*t-35.75*Math.pow(s, 0.16)+0.4275*t*Math.pow(s, 0.16)).toFixed(1);
 
 const currentDateElement = document.getElementById('current-date');
 const currentDate = new Date();

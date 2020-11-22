@@ -30,6 +30,27 @@ a:link, a:visited {
   font-size: 1.6em;
 }
 
+#fiveDayColumns{
+  display: grid;
+  grid: "myArea myArea myArea myArea myArea"
+  font-size: .6em;
+  grid-gap: 5px;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  background: url(https://plewekat.github.io/images/5day1000.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 600px;
+}
+
+#fiveDayAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #weatherColumns h3 {
   grid-area: myArea;
   margin: 2px;
@@ -42,9 +63,16 @@ a:link, a:visited {
   display: grid;
   grid: "myArea myArea";
   font-size: .6em;
-  grid-gap: 8px;
-  padding: 0px 10px 10px 10px;
+  grid-gap: 5px;
+  padding: 0px 0px 10px 10px;
   text-align: center;
+}
+
+#weatherColumns span{
+    font-size: .7em;
+}
+#weatherText {
+  font-size: .7em;
 }
 
 .alertMessage {
@@ -86,8 +114,8 @@ a:link, a:visited {
   }
 
 #cloudman{
-  max-width: 95%;
-  margin: auto;
+  max-width: 100%;
+  margin: 10px;
 }
 
 .fiveday {
@@ -277,6 +305,14 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
+#weatherColumns span{
+    font-size: .6em;
+}
+#weatherText {
+  font-size: .6em;
+}
+
+  
   header {
   display: block;
   }
@@ -378,6 +414,13 @@ img {
 
 
 @media only screen and (min-width: 50em) {
+#weatherColumns span{
+    font-size: .7em;
+}
+#weatherText {
+  font-size: .7em;
+}
+  
   h1 {
     font-size: 3.7rem;
   }

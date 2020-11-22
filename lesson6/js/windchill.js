@@ -5,9 +5,6 @@ document.getElementById('f').textContent = (35.74+0.6215*t-35.75*Math.pow(s, 0.1
 
 
 
-
-
-
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
 
 

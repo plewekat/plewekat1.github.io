@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   
   <title>Idaho Weather Now home page</title>
-  <link rel="stylesheet" href="https://plewekat.github.io/css.normalize">
-  <link rel="stylesheet" href="preston-10.css">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="css/preston-10.css">
   <link rel="shortcut icon" href="https://plewekat.github.io/favicon1.ico">
 </head>
 <body>
@@ -43,7 +43,7 @@
  <h2>PRESTON IDAHO</h2><hr>
  <div class = "content1">   
   <div id="photo"><picture class="myphoto">
-  <img src="img id = "cloudman" src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder1200.jpg" alt="Cloud reader" sizes="100vw"
+  <img id="cloudman" src="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder1200.jpg" alt="Cloud reader" sizes="100vw"
      srcset="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder400.jpg 400w,
              https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder800.jpg 800w,
              https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder1200.jpg 1200w">
@@ -53,32 +53,26 @@
   <img src ="https://plewekat.github.io/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon">
    <div id="weatherColumns">
     <h3>Weather Summary</h3>
-    Temperature:<span id="current-temp"></span>&deg; F
-    Wind Speed:<span id="s">45</span>
-    Wind Chill:<span id="f"></span>
-    Image:<span id="imagesrc"></span> &nbsp;
-    <img src="" alt="" id="icon"/>
+     <div id="weatherText">Currently: </div><span id="current-weather"></span>
+    <div id="weatherText">Temperature: </div><span id="current-temp"></span>
+    <div id="weatherText">Wind Speed: </div><span id="current-wind-speed"></span>
+    <div id="weatherText">Wind Chill: </div><span id="current-wind-chill"></span>
    </div>
   </div>
  </div>
   <hr>
-  <div class ="fiveday">
-  <img src ="https://plewekat.github.io/images/5day1000.jpg" alt="Idaho Weather Now icon" sizes="100vw"
-  srcset="https://plewekat.github.io/images/5day400.jpg 400w,
-          https://plewekat.github.io/images/5day800.jpg 800w,
-          https://plewekat.github.io/images/5day1000.jpg 1000w">
-  <hr>
-  </div>
-
+  
+  <div id="fiveDayAll">
+<div id="fiveDayColumns">
 <h2>Forecast Example</h2>
   <p> High Temperature Forecasts at noon of each day going forward.</p>
-  <p><span id="dayofweek1></span> : <span id="forecast1"></span>&deg; F</p>
-  <p><span id="dayofweek2></span> : <span id="forecast2"></span>&deg; F</p>
-  <p><span id="dayofweek3></span> : <span id="forecast3"></span>&deg; F</p>
-  <p><span id="dayofweek4></span> : <span id="forecast4"></span>&deg; F</p>
-  <p><span id="dayofweek5></span> : <span id="forecast5"></span>&deg; F</p>
-
-
+  <p><span id="dayofweek1"></span> : <span id="forecast1"></span>&deg; F</p>
+  <p><span id="dayofweek2"></span> : <span id="forecast2"></span>&deg; F</p>
+  <p><span id="dayofweek3"></span> : <span id="forecast3"></span>&deg; F</p>
+  <p><span id="dayofweek4"></span> : <span id="forecast4"></span>&deg; F</p>
+  <p><span id="dayofweek5"></span> : <span id="forecast5"></span>&deg; F</p>
+  </div>
+  </div>
 
   <div class = "articleWrapper">
   <h5>Article about Preston, Idaho</h5>
@@ -106,11 +100,9 @@
   <span id="current-date"></span>
 </footer>
 </div>
-<script src="forecast.js"></script>
-<script src="js/lesson6.js">
-</script>
-<script src="js/windchill.js">
-</script>
+<script src="js/currentweather.js"></script>
+<script src="js/forecast.js"></script>
+<!--<script src="js/lesson6.js"></script>-->
 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
     <i class="fa fa-bars"></i>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
