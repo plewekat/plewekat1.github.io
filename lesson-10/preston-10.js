@@ -34,14 +34,14 @@ fetch(forecastURL)
   .then(jsObject => {
     console.log(jsObject);
   
-    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
     const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
     for (let day = 0; day < forecast.length; day++) {
       const today = forecast[day];
       const date = new Date(today.dt_txt);
       document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
-      document.getElementById(`forecast${day+1}`).textContent = today.main.temp;
+      document.getElementById(`forecast${day+1}`).textContent = today.main.temp_max;
     }
   });
 

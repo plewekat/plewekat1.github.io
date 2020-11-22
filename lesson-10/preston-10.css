@@ -30,22 +30,32 @@ a:link, a:visited {
   font-size: 1.6em;
 }
 
-#fiveDayColumns{
+.fiveDayColumns{
+   font-family: 'abel', sans-serif;
+  font-size: .9em;
+  font-weight: 900;
+    color: white;
+  text-shadow:
+   -.5px -.5px 0 blue;
   display: grid;
-  grid: "myArea myArea myArea myArea myArea"
-  font-size: .6em;
-  grid-gap: 5px;
-  padding: 20px 20px 20px 20px;
-  margin: 20px 20px 20px 20px;
+  height: 300px;
+  width: 100%;
+  padding: 190px 10px 0px 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: -200px; 
   text-align: center;
   background: url(https://plewekat.github.io/images/5day1000.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 600px;
+  width: 350px;
 }
 
 #fiveDayAll {
+  height: 250px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +107,7 @@ a:link, a:visited {
 	position: absolute;
 	top: 10px;
 	left: 25px;
-	background-image: linear-gradient(orange, #FDC93D, #F9E24C, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E);
+	background-image: linear-gradient(orange, orange, #FDC93D, #F9E24C, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E);
 	padding: .7rem;
 	opacity: .9;
   display: flex;
@@ -123,11 +133,11 @@ display: none;
 }
 
 hr.purple {
- border: 10px solid #2F0083;
- 
+ border: 10px solid #2F0083; 
 }
+
 hr.yellow {
-  border: 1px solid #E8C144; 
+  border: 1px solid #E8C144;
 }
 
 #article {
@@ -305,6 +315,17 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
+  .fiveDayColumns{
+  font-size: 1em;
+  padding: 170px 10px 0px 10px;
+  width: 400px;
+}
+
+#fiveDayAll {
+  height: 300px;
+}
+
+  
 #weatherColumns span{
     font-size: .6em;
 }
@@ -414,6 +435,19 @@ img {
 
 
 @media only screen and (min-width: 50em) {
+    
+  
+  .fiveDayColumns{
+  font-size: 1.2em;
+  padding: 140px 10px 0px 10px;
+  width: 500px;
+}
+
+#fiveDayAll {
+  height: 400px;
+}
+  
+  
 #weatherColumns span{
     font-size: .7em;
 }
