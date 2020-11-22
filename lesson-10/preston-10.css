@@ -32,7 +32,7 @@ a:link, a:visited {
 
 .fiveDayColumns{
    font-family: 'abel', sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 900;
     color: white;
   text-shadow:
@@ -40,10 +40,10 @@ a:link, a:visited {
   display: grid;
   height: 300px;
   width: 100%;
-  padding: 190px 10px 0px 0px;
+  padding: 190px 5px 0px 5px;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 5px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 3px;
   grid-row-gap: -200px; 
   text-align: center;
   background: url(https://plewekat.github.io/images/5day1000.jpg);
@@ -317,8 +317,10 @@ nav {
   
   .fiveDayColumns{
   font-size: 1em;
-  padding: 170px 10px 0px 10px;
+  padding: 170px 9px 0px 15px;
   width: 400px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
 }
 
 #fiveDayAll {
@@ -441,10 +443,13 @@ img {
   font-size: 1.2em;
   padding: 140px 10px 0px 10px;
   width: 500px;
+  grid-template-rows: repeat(3, 1fr);
+
 }
 
 #fiveDayAll {
   height: 300px;
+ 
 }
   
   

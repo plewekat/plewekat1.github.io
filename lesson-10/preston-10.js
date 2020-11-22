@@ -8,7 +8,7 @@ fetch(weatherURL)
     const curweather = document.getElementById('current-weather');
     const curtemp = document.getElementById('current-temp');
     const curwindspeed = document.getElementById('current-wind-speed');
-  
+
 
     curweather.innerText = jsObject.weather[0].main;
     curtemp.innerText = jsObject.main.temp + " ℉";
@@ -40,8 +40,11 @@ fetch(forecastURL)
     for (let day = 0; day < forecast.length; day++) {
       const today = forecast[day];
       const date = new Date(today.dt_txt);
+      //const imgsource = `"https://openweathermap.org/img/w/${today.weather[0].icon}.png"`
+      
       document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
       document.getElementById(`forecast${day+1}`).textContent = today.main.temp_max;
+      //document.getElementById(`imagesrc${day+1}`).setAttribute("src") = imgsource;
     }
   });
 
