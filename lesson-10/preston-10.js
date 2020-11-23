@@ -8,8 +8,9 @@ fetch(weatherURL)
     const curweather = document.getElementById('current-weather');
     const curtemp = document.getElementById('current-temp');
     const curwindspeed = document.getElementById('current-wind-speed');
+    const curhumidity = document.getElementById('current-humidity');
 
-
+    curhumidity.innerText = jsObject.main.humidity;
     curweather.innerText = jsObject.weather[0].main;
     curtemp.innerText = jsObject.main.temp + " ℉";
     curwindspeed.innerText = jsObject.wind.speed + "mph";
