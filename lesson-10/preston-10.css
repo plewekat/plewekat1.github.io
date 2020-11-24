@@ -53,6 +53,10 @@ a:link, a:visited {
   width: 350px;
 }
 
+.fiveDayColumns img {
+  margin:  -40px 25px 25px 5px;
+}
+
 #fiveDayAll {
   height: 200px;
   width: 100%;
@@ -315,12 +319,16 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
+  .fiveDayColumns img {
+  margin:  -30px 15px 15px 13px;
+}
+  
   .fiveDayColumns{
   font-size: 1em;
-  padding: 170px 9px 0px 15px;
+  padding: 170px 9px 0px 11px;
   width: 400px;
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 5px;
+  grid-column-gap: 7px;
 }
 
 #fiveDayAll {
@@ -444,7 +452,10 @@ img {
   padding: 140px 10px 0px 10px;
   width: 500px;
   grid-template-rows: repeat(3, 1fr);
-
+}
+ 
+  .fiveDayColumns img {
+  margin:  -20px 25px 25px 25px;
 }
 
 #fiveDayAll {
@@ -475,9 +486,6 @@ img {
   font-size: 1.5em;
   font-weight: 800;
   padding: 1.5rem;
-}
-  .weatherSummary img {
-   max-width: 60%;
 }
 
 #weatherColumns h3 {

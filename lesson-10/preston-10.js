@@ -41,11 +41,12 @@ fetch(forecastURL)
     for (let day = 0; day < forecast.length; day++) {
       const today = forecast[day];
       const date = new Date(today.dt_txt);
-      //const imgsource = `"https://openweathermap.org/img/w/${today.weather[0].icon}.png"`
-      
+      const imgsource = `https://openweathermap.org/img/w/${today.weather[0].icon}.png`;
+      console.log(imgsource);
       document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
       document.getElementById(`forecast${day+1}`).textContent = today.main.temp_max;
-      //document.getElementById(`imagesrc${day+1}`).setAttribute("src") = imgsource;
+      console.log(document.getElementById(`imagesrc${day+1}`));
+      document.getElementById((`imagesrc${day+1}`)).setAttribute("src", imgsource);
     }
   });
 
