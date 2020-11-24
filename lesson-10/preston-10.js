@@ -51,7 +51,7 @@ fetch(forecastURL)
   });
 
 const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.flex-container')
+const mainnav = document.querySelector('.flex-container');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
