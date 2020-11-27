@@ -1,3 +1,28 @@
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+  console.table(jsonObject);
+  
+  const towns = jsonObject['towns'];
+  
+   for (let i = 0; i < towns.length; i++) {
+     if (towns[i].name == "Preston"){ 
+   let card = document.createElement('section');
+   let h2 = document.createElement('h2');
+     
+     h2.textContent = towns[i].events;
+     
+     card.appendChild(h2);
+   
+   document.querySelector('div.cards').appendChild(card);
+}
+}    
+}); 
+
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
 
 fetch(weatherURL)
@@ -15,7 +40,6 @@ fetch(weatherURL)
     curtemp.innerText = (jsObject.main.temp).toFixed(0) + " ℉";
     curwindspeed.innerText = (jsObject.wind.speed).toFixed(0) + "mph";
  
-
     const temperature = parseFloat(jsObject.main.temp);
     const windspeed = parseFloat(jsObject.wind.speed);
     let windchill = "N/A";
@@ -120,4 +144,3 @@ const imgOptions = {
     }
     
   });
-  
