@@ -44,7 +44,7 @@ fetch(forecastURL)
       const imgsource = `https://openweathermap.org/img/w/${today.weather[0].icon}.png`;
       console.log(imgsource);
       document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
-      document.getElementById(`forecast${day+1}`).textContent = today.main.temp_max;
+      document.getElementById(`forecast${day+1}`).textContent = (today.main.temp_max).toFixed(0);
       console.log(document.getElementById(`imagesrc${day+1}`));
       document.getElementById((`imagesrc${day+1}`)).setAttribute("src", imgsource);
     }
@@ -119,4 +119,3 @@ const imgOptions = {
     }
     
   });
-  
