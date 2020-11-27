@@ -5,7 +5,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-  console.table(jsonObject);
   
   const towns = jsonObject['towns'];
   
@@ -28,7 +27,6 @@ const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&u
 fetch(weatherURL)
   .then(response => response.json())
   .then(jsObject => {
-    console.log(jsObject);
 
     const curweather = document.getElementById('current-weather');
     const curtemp = document.getElementById('current-temp');
@@ -57,7 +55,6 @@ const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(forecastURL)
   .then(response => response.json())
   .then(jsObject => {
-    console.log(jsObject);
   
     const weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
     const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
@@ -66,10 +63,8 @@ fetch(forecastURL)
       const today = forecast[day];
       const date = new Date(today.dt_txt);
       const imgsource = `https://openweathermap.org/img/w/${today.weather[0].icon}.png`;
-      console.log(imgsource);
       document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
       document.getElementById(`forecast${day+1}`).textContent = (today.main.temp_max).toFixed(0);
-      console.log(document.getElementById(`imagesrc${day+1}`));
       document.getElementById((`imagesrc${day+1}`)).setAttribute("src", imgsource);
       document.getElementById((`imagesrc${day+1}`)).setAttribute("alt", date);
     }
