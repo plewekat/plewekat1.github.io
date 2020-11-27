@@ -195,6 +195,9 @@ footer a:link, a:visited {
   color: gray; 
 }
 
+#social{
+  display: block;
+}
 
 h3{
   font-family: 'Abel', sans-serif;
@@ -312,7 +315,7 @@ nav {
 }
 
 .IWicon {
-  max-width: 10%;
+  max-width: 100%;
 }
 
 
