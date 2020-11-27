@@ -47,7 +47,7 @@ fetch(forecastURL)
       document.getElementById(`forecast${day+1}`).textContent = (today.main.temp_max).toFixed(0);
       console.log(document.getElementById(`imagesrc${day+1}`));
       document.getElementById((`imagesrc${day+1}`)).setAttribute("src", imgsource);
-      document.getElementById((`imagesrc${day+1}`)).setAttribute("alt", imgsource);
+      document.getElementById((`imagesrc${day+1}`)).setAttribute("alt", date);
     }
   });
 

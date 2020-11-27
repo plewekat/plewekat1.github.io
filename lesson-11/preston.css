@@ -85,7 +85,7 @@ a:link, a:visited {
 #weatherColumns span{
     font-size: .7em;
 }
-#weatherText {
+.weatherText {
   font-size: .7em;
 }
 
@@ -339,7 +339,7 @@ nav {
 #weatherColumns span{
     font-size: .6em;
 }
-#weatherText {
+.weatherText {
   font-size: .6em;
 }
 
@@ -467,7 +467,7 @@ img {
 #weatherColumns span{
     font-size: .7em;
 }
-#weatherText {
+.weatherText {
   font-size: .7em;
 }
   
