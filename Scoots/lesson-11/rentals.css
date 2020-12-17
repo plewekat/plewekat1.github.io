@@ -86,7 +86,7 @@ td {
   font-size: .9em;
   color: black;
   text-align: left;
-  margin: 0px 10px 0px 10px;
+  margin: 5px 10px 0px 10px;
 }
 
 .cards h4 {
@@ -94,7 +94,7 @@ td {
   font-size: .9em;
   color: black;
   text-align: left;
-  margin: 0px 0px 0px 10px;
+  margin: 5px 0px 0px 10px;
   padding: 0px;
   border: 0px;
 }
@@ -104,7 +104,7 @@ td {
   font-size: .9em;
   color: black;
   text-align: left;
-  margin: 0px 0px 0px 10px;
+  margin: 5px 0px 0px 10px;
   padding: 0px;
   border: 0px;
 }
@@ -113,7 +113,7 @@ td {
   font-size: .9em;
   color: black;
   text-align: left;
-  margin: 0px 0px 0px 10px;
+  margin: 5px 0px 0px 10px;
   padding: 0px;
   border: 0px;
 }
@@ -123,7 +123,7 @@ td {
   font-size: .9em;
   color: black;
   text-align: left;
-  margin: 0px 0px 0px 10px;
+  margin: 5px 0px 0px 10px;
   padding: 0px;
   border: 0px;
 }
