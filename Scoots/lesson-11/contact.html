@@ -3,14 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Rentals page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+<meta name="description" content="Reservation page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Manrope:wght@800&family=Roboto&display=swap" rel="stylesheet">
   
-  
-  <title>Scoots Home Page</title>
+  <title>Scoots Reservation Page</title>
   <link rel="stylesheet" href="/normalize.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="shortcut icon" href="https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/scootsFavicon.JPG?raw=true">
 </head>
 <body>
@@ -40,96 +39,62 @@
   <div></div>
   </div>
   </div>
-  </header><hr class="purple">
- <main>
-  <h2>Storm Center</h2>
+  </header>
+<hr class="purple">
+<main>
+  <h3>Contact Us</h3><br>
+  <p>
+    Information and Services<br>
+
+A $50 security deposit is required to confirm reservations.
+A valid drivers license is required in hand at time of rental.
+No one under 12 years of age are allowed to ride on the scooters.
+Fuel charge not included.
+Unlimited mileage.
+Liability insurance is free of charge.
+Reservations rate requires 24 hour prior notification.
+Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+Payment via Google Pay, cash, credit card, debit card, or PayPal.
+    Rentals may be returned to either location.</p>
   <form method="get" action="thanks.html">
     <fieldset class="stormbox">
-      Personal Information
-      <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
-      <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-      <label class="top">Phone* <input type="tel" name="phone" placeholder="123555789" required></label>
-      <label class="top">Zip Code* <input type="number" name="zip" placeholder="12345" required></label>     
-    </fieldset>
-    <fieldset class="stormbox">Storm Information
-      <label class="top">Storm Date <input type="date" name="storm"></label>
-      <label class="top">Storm Type</label> <input type = "text" name="subject" list="stormtype">
-      <datalist id="stormtype">
-            <option> Flash Flood </option>
-            <option> Hail </option>
-            <option> Hurricane </option>
-            <option> Thunderstorm </option>
-            <option> Tornado </option>
-      </datalist>
-        
-        	<datalist id="tickmarks">
-  <option value="0">
-  <option value="1">
-  <option value="2">
-  <option value="3">
-  <option value="4">
-  <option value="5">
-  <option value="6">
-  <option value="7">
-  <option value="8">
-  <option value="9">
-  <option value="10">
-</datalist>
+      Contact Information<br><br>
+      <label class="top">Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label><br><br>
+      <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label><br><br>
 
-    <label class="top">Storm Severity &nbsp;&nbsp;&nbsp;
-		<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-				<span id="ratingvalue"></span>
-		</label>
-      
-  
-            <label class="top">Storm Region <select name="subject"> 
-      <option selected disabled>Select Region </option>
-            <option value="town"> Preston </option>
-            <option value="town"> Soda Springs </option>
-            <option value="town"> Fish Haven </option>
-      </select>
-      </label>
-      
-        <label class="top">User in danger: </label>
-        <label class="sbs"><input type="radio" name="danger" value="No" >No</label>
-        <label class="sbs"><input type="radio" name="danger" value="Maybe">Maybe</label>
-        <label class="sbs"><input type="radio" name="danger" value="Yes">Yes</label>
-        
-    </fieldset>
-    <fieldset class="stormbox">
       <div id="stormComments">Comments</div>
           <label class="top"><textarea id="stormtext" rows="4" cols="47"></textarea></label>
-    </fieldset>
-          
-      <input type="submit" value="Submit" class="submitBtn">
-      </form>
+
+          <br>
+      <a href="https://plewekat.github.io/Scoots/lesson-11/thankyou.html"><input type="submit" value="Submit" class="submitBtn">  
+   
+  </form>
+  <br>
 </main>
  <footer>
   <div class = "footerWrapper">
-    <div class ="fiveday">
-  <img id = "map" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/IdahoMapSm.jpg?raw=true" alt="Idaho Weather Now map">
+  <div class ="fiveday">
+  <img id = "map" src = "https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/cozumelMap.JPG?raw=true" alt="cozumel map">
     </div>
    <div class = "contactInfo">
    <h5 id = "contactTitle">Contact Information</h5>
-    <div id = "infoEmail"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoemail.jpg?raw=true" alt="Idaho Weather email icon">info@idahoweathernow.com</div>
-    <div id = "infoPhone"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoPhone.jpg?raw=true" alt="Idaho Weather phone icon">Phone: 919-191-9191</div>
-    <div id = "infoLocation"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoLocation.jpg?raw=true" alt="Idaho Weather location icon"> Location</div>
+    <div id = "infoEmail"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoemail.jpg?raw=true" alt="Scoots email icon">info@scoots.com</div>
+    <div id = "infoPhone"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoPhone.jpg?raw=true" alt="Scoots phone icon">Phone: 919-191-9191</div>
+    <div id = "infoLocation"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoLocation.jpg?raw=true" alt="Scoots location icon"> Location</div>
    </div>
   </div>
   <div id="social">
-    <a href="http://facebook.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoFB.jpg?raw=true" alt="Idaho Weather facebook icon">
-    <a href="http://twitter.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoTwitter.jpg?raw=true" alt="Idaho Weather twitter icon">
-    <a href="http://instagram.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoInsta.jpg?raw=true" alt="Idaho Weather insta icon">
+    <a href="http://facebook.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoFB.jpg?raw=true" alt="Scoots facebook icon">
+    <a href="http://twitter.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoTwitter.jpg?raw=true" alt="Scoots twitter icon">
+    <a href="http://instagram.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoInsta.jpg?raw=true" alt="Scoots insta icon">
   </div>
-  <h3>&copy; 2020 | Katharine Weber | <a href="https://www.byui.edu/online">BYUI Online Learning</a></h3>
+  <h6>&copy; 2020 | Katharine Weber | <a href="https://www.byui.edu/online">BYUI Online Learning</a></h6>
   <span id="current-date"></span>
 </footer>
 </div>
-<script src="/lesson-11/stormcenter.js">
-</script>
-<script src="/lesson6/js/windchill.js">
-</script>
+<script src="contact.js"></script>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
     <i class="fa fa-bars"></i>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 </html>
