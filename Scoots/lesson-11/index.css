@@ -1,11 +1,54 @@
+body{
+  font-family: 'heebo', sans-serif;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  background-size: cover;
+}
+
 #main {
-  background-color: #e97b00;
-  border-radius: 0px 0px 25px 25px;
-  margin: 0px 0px 100px 0px;
-} 
+  background-color: white;
+  border-radius: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
 
 img[data-src] {
 filter: blur(0.05em);
+}
+
+table {
+  float: right;
+  box-shadow: 15px 15px 15px gray;
+  font-size: .8em;
+}
+
+table img {
+  max-width: 70px;
+}
+
+.tableheader {
+  color: white;
+  background-color: #628ca6;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+td {
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#title {
+  font-size: 2.5em;
+}
+
+#gray {
+  background-color: #e7f0ed;
+}
+
+#white {
+  background-color: white;
 }
 
 .cards {
@@ -33,21 +76,13 @@ filter: blur(0.05em);
   font-size: 1.5rem;
 }
 
-body{
-  font-family: 'heebo', sans-serif;
-  max-width: 900px;
-  margin: auto;
-  background: #7CEAFF;
-  background-size: cover;
-}
-
 a:link, a:visited {
   border: 2px white;
   padding: 0px 0px 0px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  color: #2B0084; 
+  color: black; 
 }
 
 .alertMessageYes {
@@ -57,6 +92,41 @@ a:link, a:visited {
   padding: 20px;
   font-family: abel;
   font-size: 1.6em;
+}
+
+.fiveDayColumns{
+   font-family: 'abel', sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+    color: black;
+  text-shadow:
+   -.5px -.5px 0 gray;
+  display: grid;
+  height: 300px;
+  width: 100%;
+  padding: 195px 5px 0px 11px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px; 
+  text-align: center;
+  background: url(https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/5dayForecast.jpg?raw=true);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+}
+
+.fiveDayColumns img {
+  margin:  -40px 25px 25px 7px;
+}
+
+#fiveDayAll {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #weatherColumns h3 {
@@ -71,9 +141,16 @@ a:link, a:visited {
   display: grid;
   grid: "myArea myArea";
   font-size: .6em;
-  grid-gap: 8px;
-  padding: 0px 10px 10px 10px;
+  grid-gap: 5px;
+  padding: 0px 0px 10px 10px;
   text-align: center;
+}
+
+#weatherColumns span{
+    font-size: .7em;
+}
+.weatherText {
+  font-size: .7em;
 }
 
 .alertMessage {
@@ -85,8 +162,8 @@ a:link, a:visited {
   position: relative;
 }
 
-#photo {
-  max-width: 94%;
+#scooters {
+background-image: url("https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/paradise.jpg?raw=true");
 }
 
 .weatherSummary {
@@ -95,28 +172,24 @@ a:link, a:visited {
   font-weight: 700;
   color: white;
   font-family: 'roboto', sans-serif;
-	position: absolute;
-	top: 10px;
-	left: 25px;
-	background-image: linear-gradient(orange, black);
+	background: rgba(233, 123, 0, 0.9);
 	padding: .7rem;
 	opacity: .9;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 25px 25px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
   
 .weatherSummary img {
   display: none;
-  max-width: 50%;
+  max-width: 25%;
   margin: 5px;
   }
 
-#cloudman{
-  max-width: 95%;
-  margin: auto;
+#scooters{
+  display: inline-block;
 }
 
 .fiveday {
@@ -146,8 +219,9 @@ header {
   text-align: center;
   font-size: 1.5em;
   padding: 0px 0px 10px 0px;
- background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scootsHeader1a.jpg");
-   background-size: cover;
+ background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scoots900Header1.jpg");
+   background-size: center;
+   background-repeat: no-repeat;
 }
 
 h1 {
@@ -161,7 +235,7 @@ h1 {
 
   h2 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 50rem;
     font-family: 'roboto', sans-serif;
     margin: 10px;
     padding: 10px;
@@ -173,7 +247,7 @@ footer {
   padding: 1px 0px 10px 0px;
 	background-image: linear-gradient(white, black);
   color: rgb(146, 158, 149);
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 footer a:link, a:visited {
@@ -189,7 +263,7 @@ footer a:link, a:visited {
   h3{
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    font-size: .6em;
+    font-size: 5.6em;
     margin: 5px;
   }
 
@@ -232,9 +306,8 @@ nav {
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  margin: 10px;
   list-style: none;
-	padding: 0;
+	margin: 10px 0px 10px 0px;
   font-weight: 700;
 }
 
@@ -283,6 +356,7 @@ nav {
   max-width: 100%;
   padding: 0px 0px 20px 20px;
   font-size: .7em;
+  color: black;
 }
 
 #contactTitle {
@@ -335,16 +409,19 @@ h2 {
     font-size: 1rem;
   }
   
-.weatherSummary {
-  max-width: 30rem;
-  font-size: 1.5em;
-  font-weight: 700;
-  padding: 1.2rem;
+  .weatherSummary {
+  max-width: 350px;
+  font-size: .8em;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
 }
-.weatherSummary img {
+  
+  .weatherSummary img {
    display: block;
-   max-width: 40%;
-  }
+   max-width: 120px;
+   margin: 10px;
+}
   
 #weatherColumns h3 {
   font-size: 1.1em;
@@ -387,16 +464,18 @@ img {
   }
   
 #flexTitle {
-  padding: 40px 40px 30px 60px;
   display: flex;
+  justify-content: left;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  padding: 150px 0px 0px 0px;
 }
     
 #flexHeader{
+  height: 350px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  padding: 40px 0px 0px 0px;
 }
  .fiveday {
  display: block;
@@ -429,29 +508,36 @@ img {
   h1 {
     font-size: 3.7rem;
   }
+  
+  h2 {
+    font-size: 3em;
+  }
   h3 {
-    font-size: .9em;
+    font-size: 2.9em;
   }
     .flex-container a {
-		font-size: .8em;
+		font-size: 1.2em;
 	}
   
   .weatherSummary {
-  max-width: 50rem;
-  font-size: 1.5em;
+  max-width: 370px;
+  font-size: 1.4em;
   font-weight: 800;
-  padding: 1.5rem;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
 }
+  
   .weatherSummary img {
-   max-width: 60%;
+   max-width: 150px;
+   margin: 10px;
 }
 
 #weatherColumns h3 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #weatherColumns {
-  font-size: .95em;
+  font-size: .5em;
 }
   
   .fiveday {
