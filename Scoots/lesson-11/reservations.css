@@ -1,0 +1,563 @@
+body{
+  font-family: 'heebo', sans-serif;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  background-size: cover;
+}
+
+#main {
+  background-color: white;
+  border-radius: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#flexTitle {
+  display: block;
+  padding: 50px 0px 0px 0px;
+}
+    
+#flexHeader{
+  height: 200px;
+  display: block;
+  justify-content: center;
+  padding: 40px 0px 0px 0px;
+}
+
+img[data-src] {
+filter: blur(0.05em);
+}
+
+table {
+  float: right;
+  box-shadow: 10px 5px 10px gray;
+  font-size: .8em;
+   max-width: 45%;
+}
+
+table img {
+  max-width: 70px;
+}
+
+.tableheader {
+  color: white;
+  background-color: #628ca6;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+td {
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#title {
+  font-size: 2.5em;
+}
+
+#gray {
+  background-color: #e7f0ed;
+}
+
+#white {
+  background-color: white;
+}
+ 
+a:link, a:visited {
+  border: 2px white;
+  padding: 0px 0px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black; 
+}
+
+.alertMessageYes {
+  display:block;
+  color: black;
+  background: orange;
+  padding: 20px;
+  font-family: abel;
+  font-size: 1.6em;
+}
+
+.fiveDayColumns{
+   font-family: 'abel', sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+    color: black;
+  text-shadow:
+   -.5px -.5px 0 gray;
+  display: grid;
+  height: 300px;
+  width: 100%;
+  padding: 195px 5px 0px 11px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px; 
+  text-align: center;
+  background: url(https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/5dayForecast.jpg?raw=true);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+}
+
+.fiveDayColumns img {
+  margin:  -40px 25px 25px 7px;
+}
+
+#fiveDayAll {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#weatherColumns h3 {
+  grid-area: myArea;
+  font-size: 1em;
+  text-align: center;
+
+}
+
+#weatherColumns {
+  display: grid;
+  grid: "myArea myArea";
+  font-size: .6em;
+  grid-gap: 5px;
+  padding: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+#weatherColumns span{
+    font-size: .7em;
+}
+.weatherText {
+  font-size: .7em;
+}
+
+.alertMessage {
+  display: none;
+}
+
+.content1 {
+  margin: 10px 0px 20px 10px;
+  position: relative;
+}
+
+#scooters {
+background-image: url("https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/paradise.jpg?raw=true");
+   max-width: 100%;
+  background-size: cover;
+}
+
+.weatherSummary {
+  max-width: 10rem;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  font-family: 'roboto', sans-serif;
+	background: rgba(233, 123, 0, 0.9);
+	margin: 0px;
+	opacity: 1;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 25px 25px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.weatherSummary img {
+  display: none;
+  max-width: 25%;
+  margin: 5px;
+  }
+
+#scooters{
+  display: inline-block;
+}
+
+#paradise {
+ max-width: 95%;
+}
+
+.fiveday {
+display: none;
+}
+
+hr.purple {
+ border: 10px solid black;
+ 
+}
+hr.yellow {
+  border: 1px solid orange; 
+}
+
+#article {
+  margin: 20px;
+  font-size: 1.0em;
+}
+
+#articleImg {
+  max-width: 40%;
+  float: right; 
+  margin: 0px 25px 25px 25px; 
+}
+header {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0px 0px 10px 0px;
+ background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scoots1200Header1.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0px;
+  color: white;
+  margin: -10px;
+}
+
+  h2 {
+    text-align: center;
+    font-size: 50rem;
+    font-family: 'roboto', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: #7CEAFF;
+  }
+
+footer {
+  text-align: center;
+  padding: 1px 0px 10px 0px;
+	background-image: linear-gradient(white, black);
+  color: rgb(146, 158, 149);
+  border-radius: 0px 0px 0px 0px;
+}
+
+footer a:link, a:visited {
+  border: 2px white;
+  padding: 0px 0px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: gray; 
+}
+
+
+  h3{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6em;
+    margin: 5px;
+  }
+
+ p {
+    text-align: center;
+    margin: 10px;
+    font-size: .7em;
+  }
+
+h4{
+  padding: 0px 0px 0px 0px;
+  font-size: .8em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px -10px 10px -10px;
+}
+
+h5 {
+  padding: 0px 0px 0px 20px;
+  font-size: 1.15em;
+  padding: 20px;
+}
+
+#paragraph
+{
+  padding: 0px 0px 0px 20px;
+}
+
+img { 
+  max-width:100%;
+  height: auto;
+  margin: 10px;
+}
+nav {
+	margin: 0 auto;
+}
+
+.flex-container {
+  background-color: #e0e2da;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+	margin: 10px 0px 10px 0px;
+  font-weight: 700;
+}
+
+.flex-container .active {
+  color: orange;
+}
+
+.flex-container a:hover {
+  color: gray;
+}
+
+.flex-container li:first-child {
+	display: block;
+}
+
+.flex-container li {
+	display: none;
+}
+.flex-container a {
+  font-family: 'Heebo', sans-serif;
+  font-size: .8em;
+	display: block;
+  padding: .65rem;
+	text-align: left;
+}
+
+.flex-container #myLinks {
+  display: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+#current-date {
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+
+  .footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .contactInfo {
+  max-width: 100%;
+  padding: 0px 0px 20px 20px;
+  font-size: .7em;
+  color: black;
+}
+
+#contactTitle {
+  margin: -10px;
+}
+#infoEmail {
+  display: flex;
+  align-items: center;
+}
+
+#infoPhone {
+  display: flex;
+  align-items: center;
+}
+
+#infoLocation {
+  display: flex;
+  align-items: center;
+}
+
+#map {
+ width: 200px;
+ height: 200px;
+}
+
+.IWicon {
+  max-width: 100%;
+}
+
+
+
+@media only screen and (min-width: 32.5em) {
+  
+  p {
+    font-size: .8em;
+  }
+  
+  header {
+  display: block;
+    height: 300px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+h2 {
+  font-size: 1.2rem;
+}
+  h4{
+    font-size: 1rem;
+  }
+  
+  .weatherSummary {
+  max-width: 320px;
+    display: flex;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
+}
+  
+  .weatherSummary img {
+   display: block;
+   max-width: 120px;
+   margin: 10px;
+}
+  
+#weatherColumns h3 {
+  font-size: 1.1em;
+}
+
+#weatherColumns {
+  font-size: .8em;
+}
+  
+#paradise {
+ max-width: 51%;
+}
+  
+img {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-container {
+  font-size: 1.4em;
+  display: flex;
+  padding: 0px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
+.flex-container li {
+		display: block;
+		flex: 1 1 auto;
+	}
+  
+  .flex-container a {
+		text-align: center;
+		font-size: .85em;
+    padding: 5px;
+	}
+  
+  .flex-container li:first-child {
+		display: none;
+	}
+  
+  h3 {
+    font-size: 2.2em;
+  }
+  
+#flexTitle {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-align: center;
+  padding: 90px 0px 0px 0px;
+}
+    
+#flexHeader{
+  height: 350px;
+  display: flex;
+  justify-content: left;
+  padding: 40px 0px 0px 0px;
+}
+ .fiveday {
+ display: block;
+ margin: 0px 0px 0px 10px;
+ max-width: 94%;
+}
+  
+ .content1 {
+  margin: 10px -8px 10px 10px;
+  position: relative;
+}
+ 
+#article {
+  font-size: 1.1em;
+}
+.contactInfo {
+  font-size: .8em;
+}
+}
+  
+
+@media only screen and (min-width: 50em) {
+  
+  header {
+    height: 370px;
+  }
+  p {
+    font-size: .9em;
+  }
+  
+  h1 {
+    font-size: 3.7rem;
+  }
+  
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2.9em;
+  }
+    .flex-container a {
+		font-size: 1.1em;
+  }
+  
+  #flexTitle {
+  padding: 135px 0px 0px 0px;
+}
+  .weatherSummary {
+  max-width: 370px;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
+}
+  
+  .weatherSummary img {
+   max-width: 150px;
+   margin: 10px;
+}
+
+#weatherColumns h3 {
+  font-size: 1em;
+}
+
+#weatherColumns {
+  font-size: .5em;
+}
+  
+  .fiveday {
+ max-width: 95%;
+}
+  
+  .content1 {
+  margin: 10px -20px 10px 10px;
+  position: relative;
+}
+  
+  #article {
+  font-size: 1.3em;
+}
+  .contactInfo {
+  font-size: 1em;
+}
+}

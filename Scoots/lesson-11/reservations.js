@@ -1,75 +1,3 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-  
-  const towns = jsonObject['towns'];
-  
-   for (let i = 0; i < towns.length; i++) {
-     if (towns[i].name == "Fish Haven"){ 
-   let card = document.createElement('section');
-   let h2 = document.createElement('h2');
-     
-     h2.textContent = towns[i].events;
-     
-     card.appendChild(h2);
-   
-   document.querySelector('div.cards').appendChild(card);
-}
-}    
-}); 
-
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
-
-fetch(weatherURL)
-  .then(response => response.json())
-  .then(jsObject => {
-
-    const curweather = document.getElementById('current-weather');
-    const curtemp = document.getElementById('current-temp');
-    const curwindspeed = document.getElementById('current-wind-speed');
-    const curhumidity = document.getElementById('current-humidity');
-
-    curhumidity.innerText = jsObject.main.humidity;
-    curweather.innerText = jsObject.weather[0].main;
-    curtemp.innerText = (jsObject.main.temp).toFixed(0) + " ℉";
-    curwindspeed.innerText = (jsObject.wind.speed).toFixed(0) + "mph";
- 
-    const temperature = parseFloat(jsObject.main.temp);
-    const windspeed = parseFloat(jsObject.wind.speed);
-    let windchill = "N/A";
-    if (temperature <= 50 && windspeed >= 3) {
-      windchill = (35.74+0.6215*temperature-35.75*Math.pow(windspeed, 0.16)+0.4275*temperature*Math.pow(windspeed, 0.16)).toFixed(0);
-      windchill = windchill + " ℉"
-    }
-    document.getElementById('current-wind-chill').textContent = windchill;
-});
-
-
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
-
-
-fetch(forecastURL)
-  .then(response => response.json())
-  .then(jsObject => {
-  
-    const weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-    const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-
-    for (let day = 0; day < forecast.length; day++) {
-      const today = forecast[day];
-      const date = new Date(today.dt_txt);
-      const imgsource = `https://openweathermap.org/img/w/${today.weather[0].icon}.png`;
-      document.getElementById(`dayofweek${day+1}`).textContent = weekdays[date.getDay()];
-      document.getElementById(`forecast${day+1}`).textContent = (today.main.temp_max).toFixed(0);
-      document.getElementById((`imagesrc${day+1}`)).setAttribute("src", imgsource);
-      document.getElementById((`imagesrc${day+1}`)).setAttribute("alt", date);
-    }
-  });
-
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.flex-container');
 
@@ -86,22 +14,48 @@ const dateFormatOptions = {
   day: 'numeric'
 };
 
-currentDateElement.textContent = currentDate.toLocaleDateString('en-US', dateFormatOptions);
+const requestURL = 'https://plewekat.github.io/Scoots/lesson-11/prices.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonObject) 
+{
+  console.table(jsonObject);  // temporary checking for valid response and data parsing
+  const vehicles = jsonObject['vehicles'];  
+  vehicles.forEach(vehicle => {
+    let card= document.createElement('section');
+    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
+    let h4 = document.createElement('h4');
+    let h5 = document.createElement('h5');
+    let h6 = document.createElement('h6');
+    let h7 = document.createElement('h7');
+    let image = document.createElement('img');
 
 
-const headerDate = new Date();
-const headerDay = headerDate.getDay();
+h2.innerHTML = `<span class="name">${vehicle.name}</span>`;
+h3.innerHTML = `<span class="subtitle">${vehicle.reshalf}</span>`;
+h4.innerHTML = `<span class="subtitle">${vehicle.resfull}</span>`;
+h5.innerHTML = `<span class="subtitle">${vehicle.walkhalf}</span>`;
+h6.innerHTML = `<span class="subtitle">${vehicle.walkfull}</span>`;
+h7.innerHTML = `<span class="subtitle">${vehicle.max}</span>`;
+image.setAttribute('src', vehicle.imageurl);
+image.setAttribute('alt', `${vehicle.name}`);
 
-if (headerDay===6) {
-document.getElementById('alertMsg').classList.add('alertMessageYes');
-document.getElementById('alertMsg').classList.remove('alertMessage');
-}
+card.appendChild(image); 
+card.appendChild(h2);
+card.appendChild(h3);
+card.appendChild(h4);
+card.appendChild(h5);
+card.appendChild(h6);
+card.appendChild(h7);
 
-if (headerDay!=6) {
-document.getElementById('alertMsg').classList.add('alertMessage');
-document.getElementById('alertMsg').classList.remove('alertMessageYes');
-};
-
+document.querySelector('div.cards').appendChild(card);
+});
+});
 
 const imgOptions = {
   threshold: 1,
@@ -134,9 +88,8 @@ const imgOptions = {
   WebFont.load({
     google: {
       families: [
-         'Abel', 'Roboto', 'nanum gothic'
+         'heebo', 'Roboto', 'manrope'
       ]
     }
     
   });
-  

@@ -1,15 +1,17 @@
+
 <!Doctype html>
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reservation page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+<meta name="description" content="Index page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Manrope:wght@800&family=Roboto&display=swap" rel="stylesheet">
   
-  <title>Scoots Reservation Page</title>
+  
+  <title>Scoots Home Page</title>
   <link rel="stylesheet" href="/normalize.css">
-  <link rel="stylesheet" href="reservations.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/scootsFavicon.JPG?raw=true">
 </head>
 <body>
@@ -19,7 +21,7 @@
 		<li><a class="ham" href="#">&#9776;</a></li>
 		<li><a href="https://plewekat.github.io/Scoots/lesson-11/index.html" onclick="myFunction(this, 'white')">HOME</a></li>
 		<li><a href="https://plewekat.github.io/Scoots/lesson-11/rentals.html" onclick="myFunction(this, 'white')">RENTALS</a></li>
-		<li><a class="active" href="https://plewekat.github.io/Scoots/lesson-11/reservations.html" onclick="myFunction(this, 'white')">RESERVATIONS</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html" onclick="myFunction(this, 'white')">RESERVATIONS</a></li>
 		<li><a href="https://plewekat.github.io/Scoots/lesson-11/tours.html" onclick="myFunction(this, 'white')">TOURS</a></li>
 		<li><a href="https://plewekat.github.io/Scoots/lesson-11/contact.html" onclick="myFunction(this, 'white')">CONTACT</a></li>
 	 </ul>
@@ -28,7 +30,7 @@
  <div id="flexHeader">
   <div id="flexTitle">
      <div class = "weatherSummary">
-<a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scooterWeather250.jpg" alt="scoots call to action icon"></a>
+<a href="http://plewekat.github.io/scoots/reservations.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scooterWeather250.jpg" alt="scoots call to action icon"></a>
    <div id="weatherColumns">
     <h3>Weather Summary</h3>
      <div class="weatherText">Currently: </div><span id="current-weather"></span>
@@ -40,68 +42,25 @@
   </div>
   </div>
   </header>
+ <hr>
 <hr class="purple">
+<hr>
 <main>
-  <h3>Reservations</h3>
-  <p>
-    Information and Services<br>
-
-A $50 security deposit is required to confirm reservations.
-A valid drivers license is required in hand at time of rental.
-No one under 12 years of age are allowed to ride on the scooters.
-Fuel charge not included.
-Unlimited mileage.
-Liability insurance is free of charge.
-Reservations rate requires 24 hour prior notification.
-Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
-Payment via Google Pay, cash, credit card, debit card, or PayPal.
-    Rentals may be returned to either location.</p>
-  <form method="get" action="thanks.html">
-    <fieldset class="stormbox">
-      Personal Information<br><br>
-      <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label><br>
-            <label class="top">Home State* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label><br>
-      <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label><br>
-      <label class="top">Phone* <input type="tel" name="phone" placeholder="123555789" required></label><br>
-      <label class="top">Zip Code* <input type="number" name="zip" placeholder="12345" required></label><br>     
-    </fieldset>
-    <fieldset class="stormbox">Reservation Information<br><br>
-      <label class="top">Rental Date <input type="date" name="storm"></label><br>  
-      <label class="top">Vehicle Type</label> <input type = "text" name="subject" list="vehicletype">
-      <datalist id="vehicletype">
-            <option> Honda Metro </option>
-            <option> Honda Dio </option>
-            <option> Honda PCX150 </option>
-            <option> Honda Pioneer </option>
-            <option> Jeep 2-Door </option>
-            <option> Jeep 4-Door </option>
-      </datalist>
-      <br>
-      <label class="top">Reservation Type</label> <input type = "text" name="subject" list="restype">
-      <datalist id="restype">
-            <option> Half Day </option>
-            <option> Full Day </option>
-      </datalist>
-<br>
-<label class="top">Reservation Location <select name="subject"> 
-      <option selected disabled>Select Location </option>
-            <option value="town"> Playa del Carmen-Cozumel </option>
-            <option value="town"> Terminal Puerta Maya </option>
-      </select>
-      </label>
-    
-    </fieldset>
-    <fieldset class="stormbox">
-      <div id="stormComments">Comments</div>
-          <label class="top"><textarea id="stormtext" rows="4" cols="47"></textarea></label>
-    </fieldset>
-          <br>
-      <a href="https://plewekat.github.io/Scoots/lesson-11/thankyou.html"><input type="submit" value="Submit" class="submitBtn">  
-   
-  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ <h3>Thank You</h3>
+ <h3>for your submission!</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
 </main>
- <footer>
+<footer>
   <div class = "footerWrapper">
   <div class ="fiveday">
   <img id = "map" src = "https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/cozumelMap.JPG?raw=true" alt="cozumel map">
@@ -122,7 +81,7 @@ Payment via Google Pay, cash, credit card, debit card, or PayPal.
   <span id="current-date"></span>
 </footer>
 </div>
-<script src="reservations.js"></script>
+<script src="index.js"></script>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
     <i class="fa fa-bars"></i>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
