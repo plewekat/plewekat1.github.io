@@ -222,7 +222,7 @@ hr.yellow {
   border: 1px solid orange; 
 }
 
-#article {
+.article {
   margin: 20px;
   font-size: 1.0em;
 }
