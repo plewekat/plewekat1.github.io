@@ -32,6 +32,7 @@ fetch(requestURL)
     let h4 = document.createElement('h4');
     let h5 = document.createElement('h5');
     let h6 = document.createElement('h6');
+    let h7 = document.createElement('h7');
     let image = document.createElement('img');
 
 
@@ -40,6 +41,7 @@ h3.innerHTML = `<span class="subtitle">${vehicle.reshalf}</span>`;
 h4.innerHTML = `<span class="subtitle">${vehicle.resfull}</span>`;
 h5.innerHTML = `<span class="subtitle">${vehicle.walkhalf}</span>`;
 h6.innerHTML = `<span class="subtitle">${vehicle.walkfull}</span>`;
+h7.innerHTML = `<span class="subtitle">${vehicle.max}</span>`;
 image.setAttribute('src', vehicle.imageurl);
 image.setAttribute('alt', `${vehicle.name}`);
 
@@ -47,9 +49,9 @@ card.appendChild(image);
 card.appendChild(h2);
 card.appendChild(h3);
 card.appendChild(h4);
-    card.appendChild(h5);
-    card.appendChild(h6);
-
+card.appendChild(h5);
+card.appendChild(h6);
+card.appendChild(h7);
 
 document.querySelector('div.cards').appendChild(card);
 });
@@ -91,4 +93,3 @@ const imgOptions = {
     }
     
   });
-
