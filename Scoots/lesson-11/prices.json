@@ -29,12 +29,12 @@
     },
     {
       "name": "Honda Pioneer ATV",
-      "reshalf": "$50",
+      "reshalf": "Reservation Half Day $50",
       "resfull": "$70",
       "walkhalf": "$60",
       "walkfull": "$80",
       "max": 4,
-      "imageurl": "https://plewekat.github.io/Scoots/images/hondaPioneer1.JPG"
+      "imageurl": "https://plewekat.github.io/Scoots/images/hondaPioneer.JPG"
     },
     {
       "name": "Jeep Wrangler 2 Door",
