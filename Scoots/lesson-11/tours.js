@@ -9,7 +9,7 @@ fetch(requestURL)
   const towns = jsonObject['towns'];
   
    for (let i = 0; i < towns.length; i++) {
-     if (towns[i].name == "Soda Springs"){ 
+     if (towns[i].name == "Preston"){ 
    let card = document.createElement('section');
    let h2 = document.createElement('h2');
      
@@ -22,7 +22,7 @@ fetch(requestURL)
 }    
 }); 
 
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.9458&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
 
 fetch(weatherURL)
   .then(response => response.json())
@@ -43,13 +43,13 @@ fetch(weatherURL)
     let windchill = "N/A";
     if (temperature <= 50 && windspeed >= 3) {
       windchill = (35.74+0.6215*temperature-35.75*Math.pow(windspeed, 0.16)+0.4275*temperature*Math.pow(windspeed, 0.16)).toFixed(0);
-      windchill = windchill + " ℉"
+      windchill = windchill + "℉"
     }
     document.getElementById('current-wind-chill').textContent = windchill;
 });
 
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&units=imperial&APPID=b84b59a1755e37713619b7756a56bd66";
 
 
 fetch(forecastURL)
@@ -134,9 +134,8 @@ const imgOptions = {
   WebFont.load({
     google: {
       families: [
-         'Abel', 'Roboto', 'nanum gothic'
+         'heebo', 'Roboto', 'manrope'
       ]
     }
     
   });
-  
