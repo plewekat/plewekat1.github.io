@@ -6,7 +6,7 @@
       "resfull": "Reservation Full Day $30",
       "walkhalf": "Walk-In Half Day $25",
       "walkfull": "Walk-In Full Day $35",
-      "max": 1,
+      "max": "Maximum people: 1",
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaMetro.JPG"
     },
     {
@@ -15,7 +15,7 @@
       "resfull": "Reservation Full Day $40",
       "walkhalf": "Walk-In Half Day $35",
       "walkfull": "Walk-In Full Day $45",
-      "max": 2,
+      "max": "Maximum people: 2",
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaDio.JPG"
     },
     {
@@ -24,7 +24,7 @@
       "resfull": "Reservation Full Day $50",
       "walkhalf": "Walk-In Half Day $45",
       "walkfull": "Walk-In Full Day $55",
-      "max": 2,
+      "max": "Maximum people: 2",
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaPCX.JPG"
     },
     {
@@ -33,7 +33,7 @@
       "resfull": "Reservation Full Day $70",
       "walkhalf": "Walk-In Half Day $60",
       "walkfull": "Walk-In Full Day $80",
-      "max": 4,
+      "max": "Maximum people: 4",
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaPioneer.JPG"
     },
     {
@@ -42,7 +42,7 @@
       "resfull": "Reservation Full Day $85",
       "walkhalf": "Walk-In Half Day $70",
       "walkfull": "Walk-In Full Day $90",
-      "max": 4,
+      "max": "Maximum people: 4",
       "imageurl": "https://plewekat.github.io/Scoots/images/jeep2door.JPG"
     },
     {
@@ -51,7 +51,7 @@
       "resfull": "Reservation Full Day $100",
       "walkhalf": "Walk-In Half Day $85",
       "walkfull": "Walk-In Full Day $125",
-      "max": 4,
+      "max": "Maximum people: 4",
       "imageurl": "https://plewekat.github.io/Scoots/images/jeep4door.JPG"
     }
   ]
