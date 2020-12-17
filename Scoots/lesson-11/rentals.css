@@ -12,14 +12,27 @@ body{
   margin: 0px 0px 0px 0px;
 }
 
+#flexTitle {
+  display: block;
+  padding: 50px 0px 0px 0px;
+}
+    
+#flexHeader{
+  height: 200px;
+  display: block;
+  justify-content: center;
+  padding: 40px 0px 0px 0px;
+}
+
 img[data-src] {
 filter: blur(0.05em);
 }
 
 table {
   float: right;
-  box-shadow: 15px 15px 15px gray;
+  box-shadow: 10px 5px 10px gray;
   font-size: .8em;
+   max-width: 45%;
 }
 
 table img {
@@ -56,26 +69,65 @@ td {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   justify-content: center; 
-  padding: 10px 10px 50px 10px;
   }
+
+.cards h2 {
+  font-family: 'heebo', sans-serif;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.cards h3 {
+  font-family: 'heebo', sans-serif;
+  font-size: .9em;
+  color: black;
+  text-align: left;
+  margin: 0px 10px 0px 10px;
+}
+
+.cards h4 {
+  font-family: 'heebo', sans-serif;
+  font-size: .9em;
+  color: black;
+  text-align: left;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
+
+.cards h5 {
+  font-family: 'heebo', sans-serif;
+  font-size: .9em;
+  color: black;
+  text-align: left;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
+.cards h6 {
+  font-family: 'heebo', sans-serif;
+  font-size: .9em;
+  color: black;
+  text-align: left;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
   
   .cards section {
     background-color: white;
   }
   
   .cards section img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 80%;
     height: auto;
   }
-
-.cards section h2{
-  color: #e97b00;
-  font-size: 1.5rem;
-}
-
+  
+  
 a:link, a:visited {
   border: 2px white;
   padding: 0px 0px 0px 10px;
@@ -131,10 +183,9 @@ a:link, a:visited {
 
 #weatherColumns h3 {
   grid-area: myArea;
-  margin: 2px;
   font-size: 1em;
   text-align: center;
-  padding: 5px;
+
 }
 
 #weatherColumns {
@@ -164,18 +215,20 @@ a:link, a:visited {
 
 #scooters {
 background-image: url("https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/paradise.jpg?raw=true");
+   max-width: 100%;
+  background-size: cover;
 }
 
 .weatherSummary {
   max-width: 10rem;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   color: white;
   font-family: 'roboto', sans-serif;
 	background: rgba(233, 123, 0, 0.9);
-	padding: .7rem;
-	opacity: .9;
-  display: flex;
+	margin: 0px;
+	opacity: 1;
+  display: block;
   align-items: center;
   justify-content: center;
   border-radius: 0px 25px 25px 0px;
@@ -190,6 +243,10 @@ background-image: url("https://github.com/plewekat/plewekat.github.io/blob/maste
 
 #scooters{
   display: inline-block;
+}
+
+#paradise {
+ max-width: 95%;
 }
 
 .fiveday {
@@ -219,8 +276,8 @@ header {
   text-align: center;
   font-size: 1.5em;
   padding: 0px 0px 10px 0px;
- background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scoots900Header1.jpg");
-   background-size: center;
+ background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scoots1200Header1.jpg");
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
@@ -263,7 +320,7 @@ footer a:link, a:visited {
   h3{
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    font-size: 5.6em;
+    font-size: 1.6em;
     margin: 5px;
   }
 
@@ -303,9 +360,10 @@ nav {
 
 .flex-container {
   background-color: #e0e2da;
-  font-size: 1.2em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style: none;
 	margin: 10px 0px 10px 0px;
   font-weight: 700;
@@ -390,12 +448,13 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
-   p {
+  p {
     font-size: .8em;
   }
   
   header {
   display: block;
+    height: 300px;
   }
   
   h1 {
@@ -410,8 +469,9 @@ h2 {
   }
   
   .weatherSummary {
-  max-width: 350px;
-  font-size: .8em;
+  max-width: 320px;
+    display: flex;
+  font-size: 1em;
   font-weight: 600;
   padding: 5px;
   margin: 0px 10px 10px 0px;
@@ -431,6 +491,10 @@ h2 {
   font-size: .8em;
 }
   
+#paradise {
+ max-width: 51%;
+}
+  
 img {
   margin: 10px;
   border-radius: 5px;
@@ -438,6 +502,7 @@ img {
 }
 
 .flex-container {
+  font-size: 1.4em;
   display: flex;
   padding: 0px;
   flex-direction: row;
@@ -451,7 +516,7 @@ img {
   
   .flex-container a {
 		text-align: center;
-		font-size: .55em;
+		font-size: .85em;
     padding: 5px;
 	}
   
@@ -460,7 +525,7 @@ img {
 	}
   
   h3 {
-    font-size: 0.6em;
+    font-size: 2.2em;
   }
   
 #flexTitle {
@@ -468,7 +533,7 @@ img {
   justify-content: left;
   flex-direction: column;
   text-align: center;
-  padding: 150px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
 }
     
 #flexHeader{
@@ -489,7 +554,7 @@ img {
 }
  
 #article {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .contactInfo {
   font-size: .8em;
@@ -497,10 +562,11 @@ img {
 }
   
 
-
-
 @media only screen and (min-width: 50em) {
   
+  header {
+    height: 370px;
+  }
   p {
     font-size: .9em;
   }
@@ -516,13 +582,16 @@ img {
     font-size: 2.9em;
   }
     .flex-container a {
-		font-size: 1.2em;
-	}
+		font-size: 1.1em;
+  }
   
+  #flexTitle {
+  padding: 135px 0px 0px 0px;
+}
   .weatherSummary {
   max-width: 370px;
-  font-size: 1.4em;
-  font-weight: 800;
+  font-size: 2em;
+  font-weight: 600;
   padding: 5px;
   margin: 0px 10px 10px 0px;
 }
@@ -550,7 +619,7 @@ img {
 }
   
   #article {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
   .contactInfo {
   font-size: 1em;
