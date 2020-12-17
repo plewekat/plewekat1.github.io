@@ -3,42 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Index page for wireframe, for Brigham Young University Idaho course CIT 230, frontend development 1.">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<meta name="description" content="Rentals page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Manrope:wght@800&family=Roboto&display=swap" rel="stylesheet">
   
-  <title>Idaho Weather Now home page</title>
-  <link rel="stylesheet" href="https://plewekat.github.io/normalize.css">
-  <link rel="stylesheet" href="/lesson-11/stormcenter.css">
-  <link rel="shortcut icon" href="https://plewekat.github.io/favicon1.ico">
+  
+  <title>Scoots Home Page</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/scootsFavicon.JPG?raw=true">
 </head>
 <body>
 <div id="main">
-  <div id="alertMsg">
-      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-  </div>
+   <nav>
+	<ul class="flex-container">
+		<li><a class="ham" href="#">&#9776;</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/index.html" onclick="myFunction(this, 'white')">HOME</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/rentals.html" onclick="myFunction(this, 'white')">RENTALS</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html" onclick="myFunction(this, 'white')">RESERVATIONS</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/tours.html" onclick="myFunction(this, 'white')">TOURS</a></li>
+		<li><a class="active" href="https://plewekat.github.io/Scoots/lesson-11/contact.html" onclick="myFunction(this, 'white')">CONTACT</a></li>
+	 </ul>
+ </nav>
  <header>
  <div id="flexHeader">
-  <a href="http://plewekat.github.io/lesson-11/index.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon"></a>
   <div id="flexTitle">
- <h1>Idaho Weather Now</h1>
-  <div><hr class ="yellow">
- <h4>WEATHER THAT MATTERS</h4></div>
+     <div class = "weatherSummary">
+<a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scooterWeather250.jpg" alt="scoots call to action icon"></a>
+   <div id="weatherColumns">
+    <h3>Weather Summary</h3>
+     <div class="weatherText">Currently: </div><span id="current-weather"></span>
+    <div class="weatherText">Temperature: </div><span id="current-temp"></span>
+    <div class="weatherText">Humidity: </div><span id="current-humidity"></span>
+   </div>
+  </div>
+  <div></div>
   </div>
   </div>
-  <nav>
-    <ul class="flex-container">
-      <li><a class="ham" href="#">&#9776;</a></li>
-      <li><a href="https://plewekat.github.io/Scoots/lesson-11/index.html" onclick="myFunction(this, 'white')">HOME</a></li>
-      <li><a href="https://plewekat.github.io/Scoots/lesson-11/rentals.html" onclick="myFunction(this, 'white')">RENTALS</a></li>
-      <li><a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html" onclick="myFunction(this, 'white')">RESERVATIONS</a></li>
-      <li><a href="https://plewekat.github.io/Scoots/lesson-11/tours.html" onclick="myFunction(this, 'white')">TOURS</a></li>
-      <li><a class="active" href="https://plewekat.github.io/Scoots/lesson-11/contact.html" onclick="myFunction(this, 'white')">CONTACT</a></li>
-     </ul>
-   </nav>
-  
-</header><hr class="purple">
+  </header><hr class="purple">
  <main>
   <h2>Storm Center</h2>
   <form method="get" action="thanks.html">
