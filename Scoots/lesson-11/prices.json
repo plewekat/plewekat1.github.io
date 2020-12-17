@@ -1,0 +1,58 @@
+{
+  "vehicles": [
+    {
+      "name": "Honda Metro Scooter",
+      "reshalf": "$20",
+      "resfull": "$30",
+      "walkhalf": "$25",
+      "walkfull": "$35",
+      "max": 1,
+      "imageurl": "https://plewekat.github.io/Scoots/images/hondaMetro.JPG"
+    },
+    {
+      "name": "Honda Dio Scooter",
+      "reshalf": "$30",
+      "resfull": "$40",
+      "walkhalf": "$35",
+      "walkfull": "$45",
+      "max": 2,
+      "imageurl": "https://plewekat.github.io/Scoots/images/hondaDio.JPG"
+    },
+    {
+      "name": "Honda PCX150 Scooter",
+      "reshalf": "$40",
+      "resfull": "$50",
+      "walkhalf": "$45",
+      "walkfull": "$55",
+      "max": 2,
+      "imageurl": "https://plewekat.github.io/Scoots/images/hondaPCX.JPG"
+    },
+    {
+      "name": "Honda Pioneer ATV",
+      "reshalf": "$50",
+      "resfull": "$70",
+      "walkhalf": "$60",
+      "walkfull": "$80",
+      "max": 4,
+      "imageurl": "https://plewekat.github.io/Scoots/images/hondaPioneer1.JPG"
+    },
+    {
+      "name": "Jeep Wrangler 2 Door",
+      "reshalf": "$60",
+      "resfull": "$85",
+      "walkhalf": "$70",
+      "walkfull": "$90",
+      "max": 4,
+      "imageurl": "https://plewekat.github.io/Scoots/images/jeep2door.JPG"
+    },
+    {
+      "name": "Jeep Wrangler 4 Door",
+      "reshalf": "$70",
+      "resfull": "$100",
+      "walkhalf": "$85",
+      "walkfull": "$125",
+      "max": 4,
+      "imageurl": "https://plewekat.github.io/Scoots/images/jeep4door.JPG"
+    }
+  ]
+}
