@@ -1,29 +1,164 @@
-#main {
-  background-color: white;
-  border-radius: 0px 0px 25px 25px;
-  margin: 0px 0px 100px 0px;
-} 
+
+
+form fieldset {
+  display: flex;
+  margin: 2rem  0px 20px 2rem;
+  border: 1px gray;
+  border-radius: 5px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: black;
+  font-size: 2rem;
+  margin: 2rem 1rem;  
+}
+
+form label.top, form div {
+  display: block;
+ padding-top: 30px;
+  color: gray;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .3rem;
+  color: #555;
+  width: 100%;
+  background-color: lightgray;
+}
+
+form label.sbs {
+text-align: left;
+display: block;
+padding: .5rem;
+color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: .5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: .75rem 1.5rem;
+  width: 100%;
+  max-width: 370px;
+}
+
+form label.top input:required {
+  border-left: #B55800 solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;  
+}
+
+.stormbox {
+ display: grid;
+ justify-content: center;
+ background-color: white;
+ text-align: left;
+ box-shadow: 0 2px 15px gray;
+ max-width: 400px;
+ padding: 30px 0px 30px 0px;
+}
+
+.alertMessageYes {
+  display:block;
+  color: black;
+  background: orange;
+  padding: 20px;
+  font-family: abel;
+  font-size: 1.6em;
+}
+
+#stormComments {
+  font-size: 1.1em;
+  text-align: center;
+}
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'heebo', sans-serif;
   max-width: 900px;
   margin: auto;
-  background: url(https://plewekat.github.io/images/cloudBlueLg.jpg) no-repeat center fixed;
+  background: white;
   background-size: cover;
 }
 
-#events{
-  color: orange;
+#main {
+  background-color: white;
+  border-radius: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+img[data-src] {
+filter: blur(0.05em);
+}
+
+table {
+  float: right;
+  box-shadow: 15px 15px 15px gray;
+  font-size: .8em;
+}
+
+table img {
+  max-width: 70px;
+}
+
+.tableheader {
+  color: white;
+  background-color: #628ca6;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+td {
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#title {
+  font-size: 2.5em;
+}
+
+#gray {
+  background-color: #e7f0ed;
+}
+
+#white {
+  background-color: white;
 }
 
 .cards {
-  color: black;
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   justify-content: center; 
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 50px 10px;
   }
+  
+  .cards section {
+    background-color: white;
+  }
+  
+  .cards section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+.cards section h2{
+  color: #e97b00;
+  font-size: 1.5rem;
+}
 
 a:link, a:visited {
   border: 2px white;
@@ -31,7 +166,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  color: #2B0084; 
+  color: black; 
 }
 
 .alertMessageYes {
@@ -45,21 +180,21 @@ a:link, a:visited {
 
 .fiveDayColumns{
    font-family: 'abel', sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 900;
-    color: white;
+    color: black;
   text-shadow:
-   -.5px -.5px 0 blue;
+   -.5px -.5px 0 gray;
   display: grid;
   height: 300px;
   width: 100%;
-  padding: 190px 5px 0px 5px;
+  padding: 195px 5px 0px 11px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 3px;
-  grid-row-gap: -200px; 
+  grid-column-gap: 5px;
+  grid-row-gap: 10px; 
   text-align: center;
-  background: url(https://plewekat.github.io/images/5day1000.jpg);
+  background: url(https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/5dayForecast.jpg?raw=true);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,8 +246,8 @@ a:link, a:visited {
   position: relative;
 }
 
-#photo {
-  max-width: 94%;
+#scooters {
+background-image: url("https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/paradise.jpg?raw=true");
 }
 
 .weatherSummary {
@@ -120,29 +255,25 @@ a:link, a:visited {
   font-size: 1.2em;
   font-weight: 700;
   color: white;
-  font-family: 'abel', sans-serif;
-	position: absolute;
-	top: 10px;
-	left: 25px;
-	background-image: linear-gradient(orange, orange, #FDC93D, #F9E24C, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E);
+  font-family: 'roboto', sans-serif;
+	background: rgba(233, 123, 0, 0.9);
 	padding: .7rem;
 	opacity: .9;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 25px 25px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
   
 .weatherSummary img {
   display: none;
-  max-width: 50%;
+  max-width: 25%;
   margin: 5px;
   }
 
-#cloudman{
-  max-width: 100%;
-  margin: 10px;
+#scooters{
+  display: inline-block;
 }
 
 .fiveday {
@@ -150,11 +281,11 @@ display: none;
 }
 
 hr.purple {
- border: 10px solid #2F0083; 
+ border: 10px solid black;
+ 
 }
-
 hr.yellow {
-  border: 1px solid #E8C144;
+  border: 1px solid orange; 
 }
 
 #article {
@@ -171,33 +302,36 @@ header {
   display: block;
   text-align: center;
   font-size: 1.5em;
-  padding: 0px 0px 10px 0px;;
-  background-image: linear-gradient(#014F91, #014F91, #2B0084, #014F91);
-  color: #e0e2da;
+  padding: 0px 0px 10px 0px;
+ background-image: url("https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scoots900Header1.jpg");
+   background-size: center;
+   background-repeat: no-repeat;
 }
 
 h1 {
-  font-family: 'nanum gothic', sans-serif;
+  font-family: 'Manrope', sans-serif;
   text-align: center;
   font-size: 1.3em;
   padding: 0px;
-  color: #f0f1ff;
+  color: white;
   margin: -10px;
 }
 
-h2 {
-  font-size: 1rem;
-  padding: 0px 0px 0px 20px;
-  font-family: 'Nanum Gothic', sans-serif;
-}
+  h2 {
+    text-align: center;
+    font-size: 50rem;
+    font-family: 'roboto', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: #7CEAFF;
+  }
 
 footer {
   text-align: center;
-  margin: 0px 0px -20px 0px;
   padding: 1px 0px 10px 0px;
-	background-image: linear-gradient(#014F91, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084,  #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #2B0084, #17214E, orange, #17214E, #2B0084, #014F91, #014F91, #17214E);
+	background-image: linear-gradient(white, black);
   color: rgb(146, 158, 149);
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 footer a:link, a:visited {
@@ -209,21 +343,25 @@ footer a:link, a:visited {
   color: gray; 
 }
 
-#social{
-  display: block;
-}
 
-h3{
-  font-family: 'Abel', sans-serif;
-  font-size: .6em;
-  padding: 0px 0px 0px 20px;
-}
+  h3{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 5.6em;
+    margin: 5px;
+  }
+
+ p {
+    text-align: center;
+    margin: 10px;
+    font-size: .7em;
+  }
 
 h4{
   padding: 0px 0px 0px 0px;
   font-size: .8em;
   color: white;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 10px -10px 10px -10px;
 }
 
@@ -252,9 +390,8 @@ nav {
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  margin: 10px;
   list-style: none;
-	padding: 0;
+	margin: 10px 0px 10px 0px;
   font-weight: 700;
 }
 
@@ -274,7 +411,7 @@ nav {
 	display: none;
 }
 .flex-container a {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: .8em;
 	display: block;
   padding: .65rem;
@@ -291,7 +428,7 @@ nav {
 
 #current-date {
   color: white;
-  font-family: 'abel', sans-serif;
+  font-family: 'Heebo', sans-serif;
 }
 
   .footerWrapper {
@@ -303,6 +440,7 @@ nav {
   max-width: 100%;
   padding: 0px 0px 20px 20px;
   font-size: .7em;
+  color: black;
 }
 
 #contactTitle {
@@ -336,30 +474,9 @@ nav {
 
 @media only screen and (min-width: 32.5em) {
   
-  .fiveDayColumns img {
-  margin:  -30px 15px 15px 13px;
-}
-  
-  .fiveDayColumns{
-  font-size: 1em;
-  padding: 170px 9px 0px 11px;
-  width: 400px;
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 7px;
-}
-
-#fiveDayAll {
-  height: 250px;
-}
-
-  
-#weatherColumns span{
-    font-size: .6em;
-}
-.weatherText {
-  font-size: .6em;
-}
-
+   p {
+    font-size: .8em;
+  }
   
   header {
   display: block;
@@ -376,16 +493,19 @@ h2 {
     font-size: 1rem;
   }
   
-.weatherSummary {
-  max-width: 30rem;
-  font-size: 1.5em;
-  font-weight: 700;
-  padding: 1.2rem;
+  .weatherSummary {
+  max-width: 350px;
+  font-size: .8em;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
 }
-.weatherSummary img {
+  
+  .weatherSummary img {
    display: block;
-   max-width: 40%;
-  }
+   max-width: 120px;
+   margin: 10px;
+}
   
 #weatherColumns h3 {
   font-size: 1.1em;
@@ -428,16 +548,18 @@ img {
   }
   
 #flexTitle {
-  padding: 40px 40px 30px 60px;
   display: flex;
+  justify-content: left;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  padding: 150px 0px 0px 0px;
 }
     
 #flexHeader{
+  height: 350px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  padding: 40px 0px 0px 0px;
 }
  .fiveday {
  display: block;
@@ -462,55 +584,44 @@ img {
 
 
 @media only screen and (min-width: 50em) {
-    
   
-  .fiveDayColumns{
-  font-size: 1.2em;
-  padding: 140px 10px 0px 10px;
-  width: 500px;
-  grid-template-rows: repeat(3, 1fr);
-}
- 
-  .fiveDayColumns img {
-  margin:  -20px 25px 25px 25px;
-}
-
-#fiveDayAll {
-  height: 300px;
- 
-}
-  
-  
-#weatherColumns span{
-    font-size: .7em;
-}
-.weatherText {
-  font-size: .7em;
-}
+  p {
+    font-size: .9em;
+  }
   
   h1 {
     font-size: 3.7rem;
   }
+  
+  h2 {
+    font-size: 3em;
+  }
   h3 {
-    font-size: .9em;
+    font-size: 2.9em;
   }
     .flex-container a {
-		font-size: .8em;
+		font-size: 1.2em;
 	}
   
   .weatherSummary {
-  max-width: 50rem;
-  font-size: 1.5em;
+  max-width: 370px;
+  font-size: 1.4em;
   font-weight: 800;
-  padding: 1.5rem;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
+}
+  
+  .weatherSummary img {
+   max-width: 150px;
+   margin: 10px;
 }
 
 #weatherColumns h3 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #weatherColumns {
-  font-size: .95em;
+  font-size: .5em;
 }
   
   .fiveday {
