@@ -2,55 +2,55 @@
   "vehicles": [
     {
       "name": "Honda Metro Scooter",
-      "reshalf": "$20",
-      "resfull": "$30",
-      "walkhalf": "$25",
-      "walkfull": "$35",
+      "reshalf": "Reservation Half Day $20",
+      "resfull": "Reservation Full Day $30",
+      "walkhalf": "Walk-In Half Day $25",
+      "walkfull": "Walk-In Full Day $35",
       "max": 1,
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaMetro.JPG"
     },
     {
       "name": "Honda Dio Scooter",
-      "reshalf": "$30",
-      "resfull": "$40",
-      "walkhalf": "$35",
-      "walkfull": "$45",
+      "reshalf": "Reservation Half Day $30",
+      "resfull": "Reservation Full Day $40",
+      "walkhalf": "Walk-In Half Day $35",
+      "walkfull": "Walk-In Full Day $45",
       "max": 2,
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaDio.JPG"
     },
     {
       "name": "Honda PCX150 Scooter",
-      "reshalf": "$40",
-      "resfull": "$50",
-      "walkhalf": "$45",
-      "walkfull": "$55",
+      "reshalf": "Reservation Half Day $40",
+      "resfull": "Reservation Full Day $50",
+      "walkhalf": "Walk-In Half Day $45",
+      "walkfull": "Walk-In Full Day $55",
       "max": 2,
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaPCX.JPG"
     },
     {
       "name": "Honda Pioneer ATV",
       "reshalf": "Reservation Half Day $50",
-      "resfull": "$70",
-      "walkhalf": "$60",
-      "walkfull": "$80",
+      "resfull": "Reservation Full Day $70",
+      "walkhalf": "Walk-In Half Day $60",
+      "walkfull": "Walk-In Full Day $80",
       "max": 4,
       "imageurl": "https://plewekat.github.io/Scoots/images/hondaPioneer.JPG"
     },
     {
       "name": "Jeep Wrangler 2 Door",
-      "reshalf": "$60",
-      "resfull": "$85",
-      "walkhalf": "$70",
-      "walkfull": "$90",
+      "reshalf": "Reservation Half Day $60",
+      "resfull": "Reservation Full Day $85",
+      "walkhalf": "Walk-In Half Day $70",
+      "walkfull": "Walk-In Full Day $90",
       "max": 4,
       "imageurl": "https://plewekat.github.io/Scoots/images/jeep2door.JPG"
     },
     {
       "name": "Jeep Wrangler 4 Door",
-      "reshalf": "$70",
-      "resfull": "$100",
-      "walkhalf": "$85",
-      "walkfull": "$125",
+      "reshalf": "Reservation Half Day $70",
+      "resfull": "Reservation Full Day $100",
+      "walkhalf": "Walk-In Half Day $85",
+      "walkfull": "Walk-In Full Day $125",
       "max": 4,
       "imageurl": "https://plewekat.github.io/Scoots/images/jeep4door.JPG"
     }
