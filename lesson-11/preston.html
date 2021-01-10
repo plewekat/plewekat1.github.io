@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Index page for wireframe, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  
+  <title>Idaho Weather Now home page</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/lesson-11/preston.css">
+  <link rel="shortcut icon" href="https://plewekat.github.io/favicon1.ico">
+</head>
+<body>
+<div id="main">
+  <div id="alertMsg">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+  </div>
+ <header>
+ <div id="flexHeader">
+  <a href="http://plewekat.github.io/lesson-11/index.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon"></a>
+  <div id="flexTitle">
+ <h1>Idaho Weather Now</h1>
+  <div><hr class ="yellow">
+ <h4>WEATHER THAT MATTERS</h4></div>
+  </div>
+  </div>
+ <nav>
+	<ul class="flex-container">
+		<li><a class="ham" href="#">&#9776;</a></li>
+		<li><a href="http://plewekat.github.io/lesson-11/index.html" onclick="myFunction(this, 'white')">HOME</a></li>
+		<li><a class="active" href="http://plewekat.github.io/lesson-11/preston.html" onclick="myFunction(this, 'white')">PRESTON</a></li>
+		<li><a href="http://plewekat.github.io/lesson-11/sodaSprings.html" onclick="myFunction(this, 'white')">SODA SPRINGS</a></li>
+		<li><a href="http://plewekat.github.io/lesson-11/fishHaven.html" onclick="myFunction(this, 'white')">FISH HAVEN</a></li>
+		<li><a href="http://plewekat.github.io/lesson-11/stormcenter.html" onclick="myFunction(this, 'white')">STORM CENTER</a></li>
+		<li><a href="http://plewekat.github.io/lesson-11/gallery.html" onclick="myFunction(this, 'white')">GALLERY</a></li>
+	 </ul>
+ </nav>
+  
+</header><hr class="purple">
+ <h2>PRESTON IDAHO</h2><hr>
+ <div class = "content1">   
+  <div id="photo"><picture class="myphoto">
+  <img id="cloudman" src="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder1200.jpg" alt="Cloud reader" sizes="100vw"
+     srcset="https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder400.jpg 400w,
+             https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder800.jpg 800w,
+             https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/cloudPlaceholder1200.jpg 1200w">
+    </picture>
+   </div>
+  <div class = "weatherSummary">
+  <img src ="https://plewekat.github.io/images/idahoWeatherIcon100.jpg" alt="Idaho Weather Now icon">
+   <div id="weatherColumns">
+    <h3>Weather Summary</h3>
+     <div class="weatherText">Currently: </div><span id="current-weather"></span>
+    <div class="weatherText">Temperature: </div><span id="current-temp"></span>
+    <div class="weatherText">Wind Speed: </div><span id="current-wind-speed"></span>
+    <div class="weatherText">Wind Chill: </div><span id="current-wind-chill"></span>
+    <div class="weatherText">Humidity: </div><span id="current-humidity"></span>
+   </div>
+  </div>
+ </div>
+  <hr>
+  
+  <div id="fiveDayAll">
+<div class="fiveDayColumns">
+  <p><span id="dayofweek1"></span></p>
+  <p><span id="dayofweek2"></span></p>
+  <p><span id="dayofweek3"></span></p>
+  <p><span id="dayofweek4"></span></p>
+  <p><span id="dayofweek5"></span></p>
+  <p><span id="forecast1"></span>&deg;F</p>
+  <p><span id="forecast2"></span>&deg;F</p>
+  <p><span id="forecast3"></span>&deg;F</p>
+  <p><span id="forecast4"></span>&deg;F</p>
+  <p><span id="forecast5"></span>&deg;F</p>
+  <img id="imagesrc1" alt="image1" src="https://openweathermap.org/">
+  <img id="imagesrc2" alt="image2" src="https://openweathermap.org/">
+  <img id="imagesrc3" alt="image3" src="https://openweathermap.org/">
+  <img id="imagesrc4" alt="image4" src="https://openweathermap.org/">
+  <img id="imagesrc5" alt="image4" src="https://openweathermap.org/">
+  
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  <p><span class=""></span></p>
+  </div>
+  </div>
+  <hr class="purple">
+
+  <div class = "articleWrapper">
+  <h5>About Preston, Idaho</h5>
+  <div id = "article">  <img id = "articleImg" src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/images/preston.jpg" alt="Idaho Weather Now icon">Preston, Idaho is one of the best kept secrets of the West.  Nestled on the Idaho side of beautiful Cache Valley and surrounded by towering mountains on each side, it is unbeatable for recreation opportunities, has that small town feeling, and is close to whatever you need. 
+
+    It is one of the safest places to live in the State of Idaho and in Cache Valley. 
+    <br><br>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</div>
+        
+      <hr class="purple"> 
+    <div id="events">  
+    <h2>Coming Up!</h2>
+      <hr>
+        <div class="cards">
+  </div>
+    </div>
+ <footer>
+  <div class = "footerWrapper">
+    <div class ="fiveday">
+  <img id = "map" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/IdahoMapSm.jpg?raw=true" alt="Idaho Weather Now map">
+    </div>
+   <div class = "contactInfo">
+   <h5 id = "contactTitle">Contact Information</h5>
+    <div id = "infoEmail"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoemail.jpg?raw=true" alt="Idaho Weather email icon">info@idahoweathernow.com</div>
+    <div id = "infoPhone"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoPhone.jpg?raw=true" alt="Idaho Weather phone icon">Phone: 919-191-9191</div>
+    <div id = "infoLocation"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoLocation.jpg?raw=true" alt="Idaho Weather location icon"> Location</div>
+   </div>
+  </div>
+  <div id="social">
+    <a href="http://facebook.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoFB.jpg?raw=true" alt="Idaho Weather facebook icon">
+    <a href="http://twitter.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoTwitter.jpg?raw=true" alt="Idaho Weather twitter icon">
+    <a href="http://instagram.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoInsta.jpg?raw=true" alt="Idaho Weather insta icon">
+  </div>
+  <h3>&copy; 2020 | Katharine Weber | <a href="https://www.byui.edu/online">BYUI Online Learning</a></h3>
+  <span id="current-date"></span>
+</footer>
+</div>
+<script src="/lesson-11/preston.js"></script>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    <i class="fa fa-bars"></i>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

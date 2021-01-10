@@ -1,0 +1,96 @@
+<!Doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tours page for Scoots, for Brigham Young University Idaho course CIT 230, frontend development 1.">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Manrope:wght@800&family=Roboto&display=swap" rel="stylesheet">
+  
+  
+  <title>Scoots Tours Page</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="tours.css">
+  <link rel="shortcut icon" href="https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/scootsFavicon.JPG?raw=true">
+</head>
+<body>
+<div id="main">
+   <nav>
+	<ul class="flex-container">
+		<li><a class="ham" href="#">&#9776;</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/index.html" onclick="myFunction(this, 'white')">HOME</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/rentals.html" onclick="myFunction(this, 'white')">RENTALS</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html" onclick="myFunction(this, 'white')">RESERVATIONS</a></li>
+		<li><a class="active" href="https://plewekat.github.io/Scoots/lesson-11/tours.html" onclick="myFunction(this, 'white')">TOURS</a></li>
+		<li><a href="https://plewekat.github.io/Scoots/lesson-11/contact.html" onclick="myFunction(this, 'white')">CONTACT</a></li>
+	 </ul>
+ </nav>
+ <header>
+ <div id="flexHeader">
+  <div id="flexTitle">
+     <div class = "weatherSummary">
+<a href="https://plewekat.github.io/Scoots/lesson-11/reservations.html"><img src = "https://raw.githubusercontent.com/plewekat/plewekat.github.io/master/Scoots/images/scooterWeather250.jpg" alt="scoots call to action icon"></a>
+   <div id="weatherColumns">
+    <h3>Weather Summary</h3>
+     <div class="weatherText">Currently: </div><span id="current-weather"></span>
+    <div class="weatherText">Temperature: </div><span id="current-temp"></span>
+    <div class="weatherText">Humidity: </div><span id="current-humidity"></span>
+   </div>
+  </div>
+  <div></div>
+  </div>
+  </div>
+  </header>
+ <hr>
+<hr class="purple">
+  <div class = "articleWrapper">
+  <h3>Tour Locations</h3>
+    <hr class="purple">
+    <hr>
+  <h2>Playa del Carmen-Cozumel</h2>
+  <div class = "article">  <img id = "articleImg" src = "https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/carmen.jpg?raw=true" alt="scoots square1">Playa del Carmen has carved its own Euro-chic niche along the Yucatán Peninsula. Sophisticated expats and vacationing Europeans relax at the beachside lounges, upholding this small enclave's budding reputation as the place in Quintana Roo to see and be seen. The area's nerve center is El Zócalo, and similar to Mediterranean beachfront towns like Nice, the funky little public square is within walking distance of the beach.
+<br><br>
+Just off the square and running parallel with the shore, La Quinta Avenida features several blocks worth of delicious eateries and quirky shops. And with proximity to the ancient ruins of Tulum and ample natural landscapes to explore (like Río Secreto, Xel-Há and the underwater depths of the Caribbean Sea), Playa del Carmen caters to history buffs and outdoor enthusiasts alike. And of course, Playa's swaths of white sand and brilliantly turquoise water impress even the most selective beach bums. Cancún is Mexico's vacation of the past – today's savvy beachgoers choose the cosmopolitan "Playa."</div>
+<hr> 
+    </div>
+
+  <div class = "articleWrapper">
+  <h2>Terminal Puerta Maya</h2>
+  <div class = "article">  <img id = "article2Img" src = "https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/maya.jpg?raw=true" alt="scoots square1">Puerta Maya’s expansive cruise center houses over 50 different outlets offering apparel, fine jewelry, artwork and other merchandise from such recognizable retailers as Milano Jewelers, Del Sol, Piranha Joe’s, Dufry, and Diamonds International. The facility also features 15 stand-alone carts where local merchants market colorful handmade crafts, costume jewelry and souvenirs.
+<br><br>
+On-site dining options within the Puerta Maya complex include the Tres Amigos Bar, a new theme restaurant inspired by the 1986 hit movie starring Steve Martin, Chevy Chase and Martin Short. The waterfront eatery – the first of its kind in the Caribbean – offers traditional Mexican fare, along with an extensive beverage menu.
+<br><br>
+Also featured is Pancho’s Backyard, a new franchise from the popular downtown Cozumel eatery featuring magnificent ocean views, as well as Fat Tuesday, a waterfront bar offering frozen drinks and light snacks, along with a DJ and dance floor.
+<br><br>
+Other retail outlets at Puerta Maya include a pharmacy, convenience store, and international pay phones. There is also a newly constructed shore excursion pier, separate from the main pier, which allows for quick and convenient access to all water-bound excursions, as well as water-based transportation to and from the facility.
+<br><br>
+The Puerta Maya pier and cruise center is located on the southwestern part of Cozumel, approximately five miles south of San Miguel, the island’s largest city.</div>
+<hr class="purple"> 
+    </div>
+    <footer>
+      <div class = "footerWrapper">
+      <div class ="fiveday">
+      <img id = "map" src = "https://github.com/plewekat/plewekat.github.io/blob/master/Scoots/images/cozumelMap.JPG?raw=true" alt="cozumel map">
+        </div>
+       <div class = "contactInfo">
+       <h5 id = "contactTitle">Contact Information</h5>
+        <div id = "infoEmail"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoemail.jpg?raw=true" alt="Scoots email icon">info@scoots.com</div>
+        <div id = "infoPhone"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoPhone.jpg?raw=true" alt="Scoots phone icon">Phone: 919-191-9191</div>
+        <div id = "infoLocation"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoLocation.jpg?raw=true" alt="Scoots location icon"> Location</div>
+       </div>
+      </div>
+      <div id="social">
+        <a href="http://facebook.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoFB.jpg?raw=true" alt="Scoots facebook icon"></a>
+        <a href="http://twitter.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoTwitter.jpg?raw=true" alt="Scoots twitter icon"></a>
+        <a href="http://instagram.com"><img class = "IWicon" src = "https://github.com/plewekat/plewekat.github.io/blob/master/images/sactoInsta.jpg?raw=true" alt="Scoots insta icon"></a>
+      </div>
+      <h6>&copy; 2020 | Katharine Weber | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="https://plewekat.github.io/Scoots/lesson-11/resources.html">Resources</a></h6>
+      <span id="current-date"></span>
+    </footer>
+</div>
+<script src="tours.js"></script>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    <i class="fa fa-bars"></i>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

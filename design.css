@@ -1,0 +1,93 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+.image {
+  max-width: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgb(224, 224, 224);
+}
+
+a { 
+  padding: 10px;
+  color: teal; 
+}
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: rgb(6, 50, 58);
+  color: rgb(146, 158, 149);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: tan;
+}
+h2 {
+  font-size: 2em;
+  margin: 0px 0px 0px 10px;
+  color: rgb(94, 70, 40);
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  background-color: rgb(6, 50, 58);
+  color: rgb(146, 158, 149);
+}
+
+h3{
+  padding: 10px;
+  font-size: .9em;
+}
+
+h4{
+  padding: 0px 10px 50px 10px;
+  font-size: .9em;
+  color: black;
+  font-weight: normal;
+}
+
+h5{
+  font-size: .8em;
+  color: #cadec5;
+}
+
+img { 
+  margin: 10px;
+ max-width: 220px;
+  }
+
+
+/* tablet view*/
+@media only screen and (min-width: 37.5em) {
+.grid-container {
+  grid-template-columns: auto auto;
+}
+}
+
+/* Desktop view*/
+@media only screen and (min-width: 60em) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
